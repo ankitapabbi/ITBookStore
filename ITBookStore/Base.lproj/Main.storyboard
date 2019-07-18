@@ -120,6 +120,31 @@
             </objects>
             <point key="canvasLocation" x="2666.666666666667" y="556.47321428571422"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uVt-Ul-ELh">
+            <objects>
+                <viewController id="OuP-Tx-WL6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWk-5t-vGF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K9W-D4-zdA">
+                                <rect key="frame" x="0.0" y="37" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="More" id="wZv-8r-zzz"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="prT-Y2-RN8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="Dm3-L1-bdN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kKD-ve-WZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4041" y="840"/>
+        </scene>
         <!--Cart-->
         <scene sceneID="ZEe-XG-0CZ">
             <objects>
@@ -183,6 +208,7 @@
                         <segue destination="OFt-ZJ-Lq4" kind="relationship" relationship="viewControllers" id="Ufv-gA-avp"/>
                         <segue destination="8hE-fA-RuG" kind="relationship" relationship="viewControllers" id="Jig-KE-1mo"/>
                         <segue destination="H3l-h8-3Eo" kind="relationship" relationship="viewControllers" id="6Ae-oY-APY"/>
+                        <segue destination="OuP-Tx-WL6" kind="relationship" relationship="viewControllers" id="6zm-wx-MBG"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3eM-kG-zTh" userLabel="First Responder" sceneMemberID="firstResponder"/>
