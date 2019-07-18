@@ -59,6 +59,9 @@ class LoginViewController: UIViewController {
                 {
                     for user in users
                     {
+                        if email.validateEmail(){
+                            
+                        
                         
                             if ( (email == (user["userEmail"] as! String)) && (password == (user["password"] as! String)) ){
                                 
@@ -80,10 +83,17 @@ class LoginViewController: UIViewController {
                                 self.performSegue(withIdentifier: "toTheMenu", sender: nil)
                                 loggedIn = true
                                 
-                                
+                            }
                                 
                             
-                        }else{
+                        } else { 
+                            let alert = UIAlertController(title: "Error", message: "Invalid Email", preferredStyle: UIAlertController.Style.alert)
+                            
+                            let actionOk = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+                            let actionCanel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+                            alert.addAction(actionOk)
+                            alert.addAction(actionCanel)
+                            self .present(alert, animated: true ,completion: nil)
                             
                         }
                     }
