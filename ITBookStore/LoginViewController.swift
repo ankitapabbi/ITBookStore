@@ -114,12 +114,29 @@ class LoginViewController: UIViewController {
         
 
     }
+    private func getRememberMeValues()
+    {
+        let userDefault = UserDefaults.standard
+        
+        if let email = userDefault.string(forKey: "userEmail")
+        {
+            txtEmail.text = email
+            
+            if let pwd = userDefault.string(forKey: "userPassword")
+            {
+                txtPassword.text = pwd
+            }
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Login"
+        getRememberMeValues()
         // Do any additional setup after loading the view.
     }
 
 
+    
 }
 

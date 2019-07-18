@@ -1,5 +1,5 @@
 //
-//  MenuTabBarController.swift
+//  WishListViewController.swift
 //  ITBookStore
 //
 //  Created by Ankita Pabbi on 2019-07-18.
@@ -8,12 +8,12 @@
 
 import UIKit
 
-class MenuTabBarController: UITabBarController {
+class WishListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
- //self.navigationItem.setHidesBackButton(true, animated: false)
-        self.navigationItem.setHidesBackButton(true, animated:true);
+self.title = "WishList"
+        
         // Do any additional setup after loading the view.
     }
     
@@ -27,10 +27,5 @@ class MenuTabBarController: UITabBarController {
         // Pass the selected object to the new view controller.
     }
     */
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationItem.hidesBackButton = true
-    }
 
 }
