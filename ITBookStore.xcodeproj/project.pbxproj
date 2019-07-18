@@ -39,6 +39,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01438AE622E10923007DA329 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		7EDDCB3822D5BA7D00790F1B = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +65,7 @@
 		7EDDCB4322D5BA7E00790F1B /* ITBookStore */ = {
 			isa = PBXGroup;
 			children = (
+				01438AE622E10923007DA329 /* New Group */,
 				7EDDCB4422D5BA7E00790F1B /* AppDelegate.swift */,
 				7EDDCB4622D5BA7E00790F1B /* LoginViewController.swift */,
 				7EDDCB4822D5BA7E00790F1B /* Main.storyboard */,
