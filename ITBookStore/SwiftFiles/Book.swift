@@ -15,6 +15,9 @@ class Book {
     var price: String
     var description: String
     var category: String
+    static var clicked_book = Book()
+    var book_Dictionary = [Int:Book]()
+    var book_array = Array<Book>()
     
     init(){
         self.id = Int()
@@ -32,6 +35,9 @@ class Book {
         self.price = bookPrice
         self.description = bookDesc
         self.category = bookCat
+    }
+    func addBook(book : Book) {
+        self.book_Dictionary.updateValue(book, forKey: book.id)
     }
     
 }

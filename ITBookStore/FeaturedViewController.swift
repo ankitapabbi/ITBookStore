@@ -13,6 +13,7 @@ class FeaturedViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
 var book_array = Array<Book>()
     var cat_array = Array<String>()
+    var count = 0
 @IBOutlet weak var tblBooks: UITableView!
     
     override func viewDidLoad() {
@@ -63,34 +64,63 @@ var book_array = Array<Book>()
                         {
                             print(bookCat)
                             book.category = bookCat
-                            
                         }
-//                        if let bookName = jsonDictionay["book_name"] as? String
-//                        {
-//                            //print(bookName)
-//                            book.bookName = bookName
-//                        }
-//                        if let authorName = jsonDictionay["author_name"] as? String
-//                        {
-//                            //print(authorName)
-//                            book.AuthorName = authorName
-//                        }
-//                        if let bookPrice = jsonDictionay["price"] as? String
-//                        {
-//                            //print(bookPrice)
-//                            book.price = bookPrice
-//                        }
-//                        if let bookDesc = jsonDictionay["desc"] as? String
-//                        {
-//                            // print(bookDesc)
-//                            book.description = bookDesc
-//                        }
+                        if let jsonArray1 = jsonDictionay["cat1"] as? [Any]
+                        {
+                            for insiderJsonObject1 in jsonArray1
+                            {
+                                //print(insiderJsonObject1, terminator:"\n\n\n\n\n")
+                                
+                                if let jsonDictionay1 =  insiderJsonObject1 as? [String: Any]
+                                {
+                                if let bookId = jsonDictionay1["id"] as? String
+                                {
+                                print(bookId)
+                                book.id = Int(bookId) ?? 0
+                                
+                                }
+                                if let bookName = jsonDictionay1["book_name"] as? String
+                                {
+                                print(bookName)
+                                book.bookName = bookName
+                                }
+                                if let authorName = jsonDictionay1["author_name"] as? String
+                                {
+                                print(authorName)
+                                book.AuthorName = authorName
+                                }
+                                if let bookPrice = jsonDictionay1["price"] as? String
+                                {
+                                print(bookPrice)
+                                book.price = bookPrice
+                                }
+                                if let bookDesc = jsonDictionay1["desc"] as? String
+                                {
+                                print(bookDesc)
+                                book.description = bookDesc
+                                }
+                                
+                                }
+                                
+                            }
+                    }
+          
                         
                     }
                     
                     self.cat_array += [book.category]
+                    var aBook = Book(bookId: book.id, bookName: book.bookName, bookAuthor: book.AuthorName, bookPrice: book.price, bookDesc: book.description,bookCat: book.category)
+                    self.book_array += [aBook]
+                    Book.clicked_book.book_array += [aBook]
                     
+                    
+                    book.addBook(book: aBook)
+                    
+                
+                   
                 }
+                
+                
             }
         }
     }
@@ -102,9 +132,25 @@ var book_array = Array<Book>()
         let  cell = tableView.dequeueReusableCell(withIdentifier: "bookCell") as! UITableViewCell
         //cell= self.book_array[indexPath.row].id
         cell.textLabel?.text = self.cat_array[indexPath.row]
-      //  cell.detailTextLabel?.text = "Book NAme : \(self.book_array[indexPath.row].bookName)"
+        // click action on perticular customer name using tap gesture
+                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapToGoOnSubCategory(_:)))
+                cell.tag = indexPath.row
+                cell.addGestureRecognizer(tapGesture)
+        
         return cell
     }
+        @objc func tapToGoOnSubCategory(_ sender: UITapGestureRecognizer) {
+            print(sender.view!.tag)// to display index
+            // let sb = UIStoryboard(name: "Main", bundle: nil)
+            //let cust = sb.instantiateViewController(withIdentifier: "customerDetail") as! ShowBillDetailsViewController
+    
+    
+            //self.navigationController?.pushViewController(cust,animated: true)
+            // to get perticular index
+            Book.clicked_book = self.book_array[(sender.view?.tag)!]
+            self.performSegue(withIdentifier: "goToSubCat", sender: nil)
+    
+        }
     /*
     // MARK: - Navigation
 

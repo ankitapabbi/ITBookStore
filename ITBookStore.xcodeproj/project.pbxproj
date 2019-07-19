@@ -15,6 +15,7 @@
 		7EB02BAA22E12920001E8765 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02BA922E12920001E8765 /* FeaturedViewController.swift */; };
 		7EB02BAC22E12939001E8765 /* WishListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02BAB22E12939001E8765 /* WishListViewController.swift */; };
 		7EB02BAE22E12947001E8765 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02BAD22E12947001E8765 /* CartViewController.swift */; };
+		7EB02BC222E2262F001E8765 /* SubCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02BC122E2262F001E8765 /* SubCategoryViewController.swift */; };
 		7EDDCB4522D5BA7E00790F1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDCB4422D5BA7E00790F1B /* AppDelegate.swift */; };
 		7EDDCB4722D5BA7E00790F1B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDDCB4622D5BA7E00790F1B /* LoginViewController.swift */; };
 		7EDDCB4A22D5BA7E00790F1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EDDCB4822D5BA7E00790F1B /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 		7EB02BA922E12920001E8765 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
 		7EB02BAB22E12939001E8765 /* WishListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListViewController.swift; sourceTree = "<group>"; };
 		7EB02BAD22E12947001E8765 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		7EB02BC122E2262F001E8765 /* SubCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryViewController.swift; sourceTree = "<group>"; };
 		7EDDCB4122D5BA7E00790F1B /* ITBookStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ITBookStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EDDCB4422D5BA7E00790F1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EDDCB4622D5BA7E00790F1B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				7EB02BA922E12920001E8765 /* FeaturedViewController.swift */,
 				7EB02BAB22E12939001E8765 /* WishListViewController.swift */,
 				7EB02BAD22E12947001E8765 /* CartViewController.swift */,
+				7EB02BC122E2262F001E8765 /* SubCategoryViewController.swift */,
 			);
 			path = ITBookStore;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				7EDDCB4722D5BA7E00790F1B /* LoginViewController.swift in Sources */,
 				7EDDCB4522D5BA7E00790F1B /* AppDelegate.swift in Sources */,
 				7EB02BA622E060C1001E8765 /* MenuTabBarController.swift in Sources */,
+				7EB02BC222E2262F001E8765 /* SubCategoryViewController.swift in Sources */,
 				7EB02BAA22E12920001E8765 /* FeaturedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
