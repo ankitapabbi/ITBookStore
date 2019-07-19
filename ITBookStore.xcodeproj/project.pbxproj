@@ -55,6 +55,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		7EB02BAF22E1377B001E8765 /* SwiftFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftFiles;
+			sourceTree = "<group>";
+		};
 		7EDDCB3822D5BA7D00790F1B = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +81,7 @@
 		7EDDCB4322D5BA7E00790F1B /* ITBookStore */ = {
 			isa = PBXGroup;
 			children = (
+				7EB02BAF22E1377B001E8765 /* SwiftFiles */,
 				01438AE622E10923007DA329 /* Extensions */,
 				7EDDCB4422D5BA7E00790F1B /* AppDelegate.swift */,
 				7EDDCB4622D5BA7E00790F1B /* LoginViewController.swift */,
