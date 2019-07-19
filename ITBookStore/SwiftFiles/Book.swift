@@ -7,8 +7,7 @@
 //
 
 import Foundation
-
-struct Book {
+class Book {
     
     var id: Int
     var bookName: String
@@ -24,5 +23,16 @@ struct Book {
         self.description = String()
         
     }
+    init(bookId: Int,bookName: String,bookAuthor:String,bookPrice:String,bookDesc:String) {
+        self.id = bookId
+        self.bookName = bookName
+        self.AuthorName = bookAuthor
+        self.price = bookPrice
+        self.description = bookDesc
+    }
     
 }
+
+
+
+

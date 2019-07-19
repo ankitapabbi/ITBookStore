@@ -8,16 +8,22 @@
 
 import UIKit
 
-class FeaturedViewController: UIViewController {
-
+class FeaturedViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    
+var book_array = Array<Book>()
+@IBOutlet weak var tblBooks: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
  
         self.title = "Featured"
         readJsonFileArray(jsonFileName: "Books")
+        self.tblBooks.delegate = self
+        self.tblBooks.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
+   
     func readJsonFileArray(jsonFileName: String)
     {
         let url = Bundle.main.url(forResource: jsonFileName, withExtension: "json")
@@ -32,12 +38,12 @@ class FeaturedViewController: UIViewController {
             return
         }
         
-        guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else { // json format
+        guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else {
             print("Error in converting in json")
             return
         }
         
-        print(json)
+        // print(json)
         print("hello")
         
         var bookList = [String: Book]()
@@ -57,12 +63,47 @@ class FeaturedViewController: UIViewController {
                         {
                             print(bookId)
                             book.id = Int(bookId) ?? 0
+                            
                         }
+                        if let bookName = jsonDictionay["book_name"] as? String
+                        {
+                            print(bookName)
+                            book.bookName = bookName
+                        }
+                        if let authorName = jsonDictionay["author_name"] as? String
+                        {
+                            print(authorName)
+                            book.AuthorName = authorName
+                        }
+                        if let bookPrice = jsonDictionay["price"] as? String
+                        {
+                            print(bookPrice)
+                            book.price = bookPrice
+                        }
+                        if let bookDesc = jsonDictionay["desc"] as? String
+                        {
+                            print(bookDesc)
+                            book.description = bookDesc
+                        }
+                        
                     }
+                    var aBook = Book(bookId: book.id, bookName: book.bookName, bookAuthor: book.AuthorName, bookPrice: book.price, bookDesc: book.description)
+                    self.book_array += [aBook]
                     
                 }
             }
         }
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.book_array.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let  cell = tableView.dequeueReusableCell(withIdentifier: "bookCell") as! UITableViewCell
+        //cell= self.book_array[indexPath.row].id
+        cell.textLabel?.text = "Book ID : \(String(self.book_array[indexPath.row].id))"
+        cell.detailTextLabel?.text = "Book NAme : \(self.book_array[indexPath.row].bookName)"
+        return cell
     }
     /*
     // MARK: - Navigation
