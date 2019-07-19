@@ -14,6 +14,7 @@ class Book {
     var AuthorName: String
     var price: String
     var description: String
+    var category: String
     
     init(){
         self.id = Int()
@@ -21,14 +22,16 @@ class Book {
         self.AuthorName = String()
         self.price = String()
         self.description = String()
+        self.category = String()
         
     }
-    init(bookId: Int,bookName: String,bookAuthor:String,bookPrice:String,bookDesc:String) {
+    init(bookId: Int,bookName: String,bookAuthor:String,bookPrice:String,bookDesc:String,bookCat: String) {
         self.id = bookId
         self.bookName = bookName
         self.AuthorName = bookAuthor
         self.price = bookPrice
         self.description = bookDesc
+        self.category = bookCat
     }
     
 }

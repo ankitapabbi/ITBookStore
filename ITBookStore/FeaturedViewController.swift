@@ -12,6 +12,7 @@ class FeaturedViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     
 var book_array = Array<Book>()
+    var cat_array = Array<String>()
 @IBOutlet weak var tblBooks: UITableView!
     
     override func viewDidLoad() {
@@ -45,7 +46,6 @@ var book_array = Array<Book>()
         
         // print(json)
         print("hello")
-        
         var bookList = [String: Book]()
         if let jsonObject = json as? [String:Any]
             
@@ -59,50 +59,50 @@ var book_array = Array<Book>()
                     //print(insiderJsonObject, terminator:"\n\n\n\n\n")
                     if let jsonDictionay =  insiderJsonObject as? [String: Any]
                     {
-                        if let bookId = jsonDictionay["id"] as? String
+                        if let bookCat = jsonDictionay["Category"] as? String
                         {
-                            print(bookId)
-                            book.id = Int(bookId) ?? 0
+                            print(bookCat)
+                            book.category = bookCat
                             
                         }
-                        if let bookName = jsonDictionay["book_name"] as? String
-                        {
-                            print(bookName)
-                            book.bookName = bookName
-                        }
-                        if let authorName = jsonDictionay["author_name"] as? String
-                        {
-                            print(authorName)
-                            book.AuthorName = authorName
-                        }
-                        if let bookPrice = jsonDictionay["price"] as? String
-                        {
-                            print(bookPrice)
-                            book.price = bookPrice
-                        }
-                        if let bookDesc = jsonDictionay["desc"] as? String
-                        {
-                            print(bookDesc)
-                            book.description = bookDesc
-                        }
+//                        if let bookName = jsonDictionay["book_name"] as? String
+//                        {
+//                            //print(bookName)
+//                            book.bookName = bookName
+//                        }
+//                        if let authorName = jsonDictionay["author_name"] as? String
+//                        {
+//                            //print(authorName)
+//                            book.AuthorName = authorName
+//                        }
+//                        if let bookPrice = jsonDictionay["price"] as? String
+//                        {
+//                            //print(bookPrice)
+//                            book.price = bookPrice
+//                        }
+//                        if let bookDesc = jsonDictionay["desc"] as? String
+//                        {
+//                            // print(bookDesc)
+//                            book.description = bookDesc
+//                        }
                         
                     }
-                    var aBook = Book(bookId: book.id, bookName: book.bookName, bookAuthor: book.AuthorName, bookPrice: book.price, bookDesc: book.description)
-                    self.book_array += [aBook]
+                    
+                    self.cat_array += [book.category]
                     
                 }
             }
         }
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.book_array.count
+        return self.cat_array.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let  cell = tableView.dequeueReusableCell(withIdentifier: "bookCell") as! UITableViewCell
         //cell= self.book_array[indexPath.row].id
-        cell.textLabel?.text = "Book ID : \(String(self.book_array[indexPath.row].id))"
-        cell.detailTextLabel?.text = "Book NAme : \(self.book_array[indexPath.row].bookName)"
+        cell.textLabel?.text = self.cat_array[indexPath.row]
+      //  cell.detailTextLabel?.text = "Book NAme : \(self.book_array[indexPath.row].bookName)"
         return cell
     }
     /*
