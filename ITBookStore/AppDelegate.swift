@@ -13,10 +13,109 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+    var books:[String:[Int:Book]] = Dictionary<String, Dictionary<Int, Book>>() //[BookType:[BookID:Book]]
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        readJsonFileArray()
+        //print(books["Science"]![1]?.bookName)
         return true
+    }
+    
+    
+    func readJsonFileArray()
+    {
+        var arrayOfBooks=Array<Book>()
+        
+        let url = Bundle.main.url(forResource: "Books", withExtension: "json")
+        
+        guard let jsonData = url else{
+            print("Error in reading the url ")
+            return
+        }
+        
+        guard let data = try? Data(contentsOf: jsonData) else {
+            print("Error in converting in data")
+            return
+        }
+        
+        guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else {
+            print("Error in converting in json")
+            return
+        }
+        
+        // print(json)
+        print("hello")
+        
+        if let jsonObject = json as? [String:Any]
+            
+        {
+            var book: Book!
+            if let jsonArray = jsonObject["books"] as? [Any]
+            {
+                
+                for insiderJsonObject1 in jsonArray
+                {
+                    book = Book()
+                    //print(insiderJsonObject1, terminator:"\n\n\n\n\n")
+                    if let jsonDictionay1 =  insiderJsonObject1 as? [String: Any]
+                    {
+                        
+                        
+                        if let bookId = jsonDictionay1["id"] as? String
+                        {
+                            //print(bookId)
+                            book.id = Int(bookId) ?? 0
+                        }
+                        
+                        if let bookName = jsonDictionay1["book_name"] as? String
+                        {
+                            //print(bookName)
+                            book.bookName = bookName
+                        }
+                        
+                        if let authorName = jsonDictionay1["author_name"] as? String
+                        {
+                            //print(authorName)
+                            book.AuthorName = authorName
+                        }
+                        
+                        if let bookPrice = jsonDictionay1["price"] as? String
+                        {
+                            // print(bookPrice)
+                            book.price = bookPrice
+                        }
+                        
+                        if let bookDesc = jsonDictionay1["desc"] as? String
+                        {
+                            //print(bookDesc)
+                            book.description = bookDesc
+                        }
+                        if let bookCat = jsonDictionay1["category"] as? String
+                        {
+                            //print(bookCat)
+                            book.category = bookCat
+                        }
+                        
+                        if var bookCategory = books[book.category]
+                        {
+                            
+                            bookCategory.updateValue(book, forKey:book!.id)
+                            
+                            books.updateValue(bookCategory, forKey: book.category)
+                        }
+                        else
+                        {
+                            
+                            
+                            books.updateValue([book!.id:book], forKey: book.category)
+                            
+                        }
+                        
+                    }
+                }
+            }
+        }
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

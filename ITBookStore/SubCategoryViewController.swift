@@ -11,11 +11,35 @@ import UIKit
 class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
     
+    
     @IBOutlet weak var tblSubCategory: UITableView!
+    var array=Array<Book>()
+    var selectedCategory : Int?
     var f = FeaturedViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let sCat = selectedCategory {
+            switch(sCat){
+            case 0:
+//                 readJsonFileArray(jsonFileName: "Books", category: "Science")
+//                for value in array
+//                {
+//                    print(value.bookName)
+//                }
+                let delegate = UIApplication.shared.delegate as! AppDelegate
+                for (key,value) in delegate.books["Science"]!
+                {
+                    array.append(value)
+                }
+                
+            case 1:
+                print("MultiMedia")
+            default:
+                print("Something Went Wrong")
+            }
+        }
 
         // Do any additional setup after loading the view.
         self.tblSubCategory.delegate = self
@@ -24,16 +48,16 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //print(Book.clicked_book.book_Dictionary.count)
-        return 5
+        return self.array.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let  cell = tableView.dequeueReusableCell(withIdentifier: "subCatCell") as! UITableViewCell
        // let b = f.book_array[indexPath.row]
-        
-        cell.textLabel?.text = "Book Name : \(Book.clicked_book.bookName)"
-        cell.detailTextLabel?.text = "Price : \(Book.clicked_book.price)"
-        
+        print(indexPath.row)
+        cell.textLabel?.text = "Book Name : \(array[indexPath.row].bookName)"
+        cell.detailTextLabel?.text = "Price : \(array[indexPath.row].price)"
+//
         return cell
     }
     /*
@@ -46,4 +70,93 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
     }
     */
 
+    func readJsonFileArray(jsonFileName: String, category:String) -> [Book]
+    {
+        var arrayOfBooks=Array<Book>()
+        
+        let url = Bundle.main.url(forResource: jsonFileName, withExtension: "json")
+        
+        guard let jsonData = url else{
+            print("Error in reading the url ")
+            return []
+        }
+        
+        guard let data = try? Data(contentsOf: jsonData) else {
+            print("Error in converting in data")
+            return []
+        }
+        
+        guard let json = try? JSONSerialization.jsonObject(with: data, options: []) else {
+            print("Error in converting in json")
+            return []
+        }
+        
+        // print(json)
+        print("hello")
+        
+        if let jsonObject = json as? [String:Any]
+            
+        {
+            var book: Book!
+            if let jsonArray = jsonObject["books"] as? [Any]
+            {
+               
+                for insiderJsonObject1 in jsonArray
+                {
+                     book = Book()
+                    //print(insiderJsonObject1, terminator:"\n\n\n\n\n")
+                        if let jsonDictionay1 =  insiderJsonObject1 as? [String: Any]
+                        {
+                            
+                            
+                            if let bookId = jsonDictionay1["id"] as? String
+                            {
+                                //print(bookId)
+                                book.id = Int(bookId) ?? 0
+                            }
+                            
+                            if let bookName = jsonDictionay1["book_name"] as? String
+                            {
+                                //print(bookName)
+                                book.bookName = bookName
+                            }
+                            
+                            if let authorName = jsonDictionay1["author_name"] as? String
+                            {
+                                //print(authorName)
+                                book.AuthorName = authorName
+                            }
+                            
+                            if let bookPrice = jsonDictionay1["price"] as? String
+                            {
+                               // print(bookPrice)
+                                book.price = bookPrice
+                            }
+                            
+                            if let bookDesc = jsonDictionay1["desc"] as? String
+                            {
+                                //print(bookDesc)
+                                book.description = bookDesc
+                            }
+                            if let bookCat = jsonDictionay1["category"] as? String
+                            {
+                                //print(bookCat)
+                                book.category = bookCat
+                            }
+                            
+                            if book.category == category
+                            {
+                                array.append(book)
+                              
+                            }
+                            
+                        }
+                        }
+            }
+        }
+     
+        return arrayOfBooks
+    }
+    
+    
 }

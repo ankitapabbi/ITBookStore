@@ -293,7 +293,7 @@
         <!--Sub Category View Controller-->
         <scene sceneID="rIP-Al-aVb">
             <objects>
-                <viewController id="8BL-z9-LFK" customClass="SubCategoryViewController" customModule="ITBookStore" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="subCategory" id="8BL-z9-LFK" customClass="SubCategoryViewController" customModule="ITBookStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cPA-Uj-8jL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

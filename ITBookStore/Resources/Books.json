@@ -1,84 +1,85 @@
 {
     "books": [
-        {
-            "Category": "Science",
-            "cat1": [
                 {
                     "id": "1",
                     "book_name": "Data Science",
                     "author_name": "Krishan",
                     "price": "90",
-                    "desc": "Welcome to ios 1"
+                    "desc": "Welcome to ios 1",
+                    "category": "Science"
                 },
                 {
                     "id": "2",
                     "book_name": "Data Structures",
                     "author_name": "Parkash",
                     "price": "19",
-                    "desc": "Welcome to ios 2"
+                    "desc": "Welcome to ios 2",
+                    "category": "Science"
                 },
                 {
                     "id": "3",
                     "book_name": "Android Programming",
                     "author_name": "Rahul",
                     "price": "66",
-                    "desc": "Welcome to ios 3"
+                    "desc": "Welcome to ios 3",
+                    "category": "Science"
                 },
                 {
                     "id": "4",
                     "book_name": "DataBase",
                     "author_name": "Kishore",
                     "price": "40",
-                    "desc": "Welcome to ios 4"
+                    "desc": "Welcome to ios 4",
+                    "category": "Science"
                 },
                 {
                     "id": "5",
                     "book_name": "Python",
                     "author_name": "Rohit",
                     "price": "55",
-                    "desc": "Welcome to ios 5"
-                }
-            ]
-        },
-        {
-            "Category": "MultiMedia",
-            "cat1": [
+                    "desc": "Welcome to ios 5",
+                    "category": "Science"
+                },
                 {
                     "id": "1",
                     "book_name": "Data Science",
                     "author_name": "Krishan",
                     "price": "90",
-                    "desc": "Welcome to ios 1"
+                    "desc": "Welcome to ios 1",
+                    "category": "MultiMedia"
+                    
                 },
                 {
                     "id": "2",
                     "book_name": "Data Structures",
                     "author_name": "Parkash",
                     "price": "19",
-                    "desc": "Welcome to ios 2"
+                    "desc": "Welcome to ios 2",
+                    "category": "MultiMedia"
                 },
                 {
                     "id": "3",
                     "book_name": "Android Programming",
                     "author_name": "Rahul",
                     "price": "66",
-                    "desc": "Welcome to ios 3"
+                    "desc": "Welcome to ios 3",
+                    "category": "MultiMedia"
                 },
                 {
                     "id": "4",
                     "book_name": "DataBase",
                     "author_name": "Kishore",
                     "price": "40",
-                    "desc": "Welcome to ios 4"
+                    "desc": "Welcome to ios 4",
+                    "category": "MultiMedia"
                 },
                 {
                     "id": "5",
                     "book_name": "Python",
                     "author_name": "Rohit",
                     "price": "55",
-                    "desc": "Welcome to ios 5"
+                    "desc": "Welcome to ios 5",
+                    "category": "MultiMedia"
                 }
-            ]
-        }
     ]
 }
