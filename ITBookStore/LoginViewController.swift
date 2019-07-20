@@ -136,13 +136,16 @@ class LoginViewController: UIViewController {
         getRememberMeValues()
         // Do any additional setup after loading the view.
     }
-
+    
+//faceId recognition
     var context = LAContext()
     
     @IBAction func btnFaceId(_ sender: UIButton) {
         
         
         context.localizedCancelTitle = "Enter Username/Password"
+       
+        let reason = "Log in to your account with account password"
         
         var error:NSError?
         if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
@@ -153,6 +156,7 @@ class LoginViewController: UIViewController {
             context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason){ success, error in
                 
                 if success{
+                    
                     DispatchQueue.main.async {
                         
                         self.performSegue(withIdentifier: "toTheMenu", sender: nil)
