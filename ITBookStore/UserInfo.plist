@@ -1,56 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   UserInfo.plist
-   ITBookStore
-
-   Created by Ankita Pabbi on 2019-07-18.
-   Copyright (c) 2019 Ankita Pabbi. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-        <key>Users</key>
-        <array>
-            <dict>
-                <key>userId</key>
-                <integer>1</integer>
-                <key>userEmail</key>
-                <string>Ankita@gmail.com</string>
-                <key>password</key>
-                <string>anku123</string>
-            </dict>
-            <dict>
-                <key>userId</key>
-                <integer>2</integer>
-                <key>userEmail</key>
-                <string>Vishal@gmail.com</string>
-                <key>password</key>
-                <string>vishal123</string>
-            </dict>
-            <dict>
-                <key>userId</key>
-                <integer>3</integer>
-                <key>userEmail</key>
-                <string>Diksha@gmail.com</string>
-                <key>password</key>
-                <string>diksha123</string>
-            </dict>
-            <dict>
-                <key>userId</key>
-                <integer>4</integer>
-                <key>userEmail</key>
-                <string>Sid@gmail.com</string>
-                <key>password</key>
-                <string>sid123</string>
-            </dict>
-            <dict>
-                <key>userId</key>
-                <integer>5</integer>
-                <key>userEmail</key>
-                <string>Netra@gmail.com</string>
-                <key>password</key>
-                <string>netra123</string>
-            </dict>
-        </array>
-    </dict>
+<dict>
+	<key>Users</key>
+	<array>
+		<dict>
+			<key>userId</key>
+			<integer>1</integer>
+			<key>userEmail</key>
+			<string>Ankita@gmail.com</string>
+			<key>password</key>
+			<string>anku123</string>
+		</dict>
+		<dict>
+			<key>userId</key>
+			<integer>2</integer>
+			<key>userEmail</key>
+			<string>Vishal@gmail.com</string>
+			<key>password</key>
+			<string>vishal123</string>
+		</dict>
+		<dict>
+			<key>userId</key>
+			<integer>3</integer>
+			<key>userEmail</key>
+			<string>Diksha@gmail.com</string>
+			<key>password</key>
+			<string>diksha123</string>
+		</dict>
+		<dict>
+			<key>userId</key>
+			<integer>4</integer>
+			<key>userEmail</key>
+			<string>S@gmail.com</string>
+			<key>password</key>
+			<string>s123</string>
+		</dict>
+		<dict>
+			<key>userId</key>
+			<integer>5</integer>
+			<key>userEmail</key>
+			<string>Netra@gmail.com</string>
+			<key>password</key>
+			<string>netra123</string>
+		</dict>
+	</array>
+</dict>
 </plist>

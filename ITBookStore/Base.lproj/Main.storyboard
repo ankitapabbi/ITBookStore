@@ -155,10 +155,10 @@
             </objects>
             <point key="canvasLocation" x="2666.666666666667" y="555.80357142857144"/>
         </scene>
-        <!--View Controller-->
+        <!--More View Controller-->
         <scene sceneID="uVt-Ul-ELh">
             <objects>
-                <viewController id="OuP-Tx-WL6" sceneMemberID="viewController">
+                <viewController id="OuP-Tx-WL6" customClass="MoreViewController" customModule="ITBookStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eWk-5t-vGF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,6 +170,21 @@
                                     <navigationItem title="More" id="wZv-8r-zzz"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKn-M5-bWR">
+                                <rect key="frame" x="10" y="120" width="404" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Profile"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZH-3k-b8p">
+                                <rect key="frame" x="10" y="167" width="404" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Contact us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFA-WH-HYu">
+                                <rect key="frame" x="5" y="224" width="404" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="About us"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="prT-Y2-RN8"/>
@@ -178,7 +193,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKD-ve-WZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4041" y="840"/>
+            <point key="canvasLocation" x="4040.579710144928" y="839.73214285714278"/>
         </scene>
         <!--Cart-->
         <scene sceneID="ZEe-XG-0CZ">
