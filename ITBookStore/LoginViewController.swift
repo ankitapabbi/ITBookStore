@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 extension UITextField {
     func setIcon(_ image: UIImage) {
@@ -22,7 +23,7 @@ extension UITextField {
 }
 class LoginViewController: UIViewController {
 
-    
+   
      var loggedIn = false
     @IBOutlet weak var switchRememberMe: UISwitch!
     @IBOutlet weak var txtEmail: UITextField!
@@ -136,7 +137,48 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    var context = LAContext()
+    
+    @IBAction func btnFaceId(_ sender: UIButton) {
+        
+        
+        context.localizedCancelTitle = "Enter Username/Password"
+        
+        var error:NSError?
+        if context.canEvaluatePolicy(.deviceOwnerAuthentication, error: &error) {
+           
+            // redirect to normal page
+            
+            //take back to login page
+            context.evaluatePolicy(.deviceOwnerAuthentication, localizedReason: reason){ success, error in
+                
+                if success{
+                    DispatchQueue.main.async {
+                        
+                        self.performSegue(withIdentifier: "toTheMenu", sender: nil)
+                        self.loggedIn = true
+
+                    }
+                }else{
+                    print(error?.localizedDescription ?? "Failed to authenticate")
+                }
+            }
+        }else {
+            print(error?.localizedDescription ?? "Can't evaluate policy")
+            
+        }
+        
+    }
+    //logout from screen
+    
+   
+//ovveride function to disable keyboard on screen
+        
+   
+    
+    }
+
 
     
-}
+
 
