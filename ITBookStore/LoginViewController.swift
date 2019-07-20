@@ -171,7 +171,25 @@ class LoginViewController: UIViewController {
             print(error?.localizedDescription ?? "Can't evaluate policy")
             
         }
+        //logout button function
+       
         
+    
+    }
+    
+    @IBAction func unWindLogoutFromAnyScreen(storyboard : UIStoryboardSegue){
+        
+        print("Logout")
+        
+        _ = storyboard.source as! MoreViewController
+        
+        txtEmail.text = ""
+        txtPassword.text = ""
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
+    {
+        self.view.endEditing(true)
     }
     //logout from screen
     
