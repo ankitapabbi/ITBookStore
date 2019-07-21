@@ -177,22 +177,25 @@ class LoginViewController: UIViewController {
     
     }
     
-    @IBAction func unWindLogoutFromAnyScreen(storyboard : UIStoryboardSegue){
-        
-        print("Logout")
-        
-        _ = storyboard.source as! MoreViewController
-        
-        txtEmail.text = ""
-        txtPassword.text = ""
-    }
+   
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?)
     {
         self.view.endEditing(true)
     }
-    //logout from screen
     
+    //logout from screen
+    @IBAction func unWindLogoutFromAnyScreen(storyboard : UIStoryboardSegue){
+        print("Logout")
+        // picking value from sencond screen and displaying on first screen while logout
+        let s = storyboard.source as! MoreViewController
+        txtEmail.text = ""
+        txtPassword.text = ""
+        
+//        userDefault.removeObject(forKey: "userEmail")
+//        userDefault.removeObject(forKey: "userPassword")
+        
+    }
    
 //ovveride function to disable keyboard on screen
         

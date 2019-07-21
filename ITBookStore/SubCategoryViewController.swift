@@ -17,6 +17,7 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
     var selectedCategory : Int?
     var f = FeaturedViewController()
     
+    @IBOutlet weak var lblDisplayCatName: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,6 +25,7 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
             switch(sCat){
             case 0:
                 print("Computer Science")
+                self.lblDisplayCatName.text = "Computer Science"
                  readJsonFileArray(jsonFileName: "Books", category: "Computer Science")
 //                for value in array
 //                {
@@ -37,6 +39,7 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
                 
             case 1:
                 print("MultiMedia")
+                self.lblDisplayCatName.text = "MultiMedia"
                  readJsonFileArray(jsonFileName: "Books", category: "MultiMedia")
 //                let delegate = UIApplication.shared.delegate as! AppDelegate
 //                for (key,value) in delegate.books["MultiMedia"]!
@@ -44,12 +47,15 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
 //                    array.append(value)
 //                }
             case 2:
+                self.lblDisplayCatName.text = "Networking"
                 readJsonFileArray(jsonFileName: "Books", category: "Networking")
                 
             case 3:
+                self.lblDisplayCatName.text = "Software"
                  readJsonFileArray(jsonFileName: "Books", category: "Software")
             
             case 4:
+                 self.lblDisplayCatName.text = "Programming"
                  readJsonFileArray(jsonFileName: "Books", category: "Programming")
                 
             default:
@@ -92,6 +98,9 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
         //            Book.clicked_book = self.book_array[(sender.view?.tag)!]
         //            self.performSegue(withIdentifier: "goToSubCat", sender: nil)
         
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return CGFloat(80)
     }
     /*
     // MARK: - Navigation
