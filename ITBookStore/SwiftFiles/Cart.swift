@@ -9,35 +9,30 @@
 import Foundation
 class Cart {
     
-    var id: Int
+    var id: String
     var bookName: String
-    var AuthorName: String
     var price: String
-    var description: String
     var category: String
-    static var clicked_book = Book()
-    static var cart_Dictionary = [Int:Book]()
-    var cart_array = Array<Book>()
+    static var clicked_book = Cart()
+    static var cart_Dictionary = [Int:Cart]()
+    var cart_array = Array<Cart>()
     
     init(){
-        self.id = Int()
+        self.id = String()
         self.bookName = String()
-        self.AuthorName = String()
         self.price = String()
-        self.description = String()
         self.category = String()
         
     }
-    init(bookId: Int,bookName: String,bookAuthor:String,bookPrice:String,bookDesc:String,bookCat: String) {
+    init(bookId: String,bookName: String,bookPrice:String,bookCat: String) {
         self.id = bookId
         self.bookName = bookName
-        self.AuthorName = bookAuthor
         self.price = bookPrice
-        self.description = bookDesc
         self.category = bookCat
     }
-    func addBook(book : Book) {
-        Cart.cart_Dictionary.updateValue(book, forKey: book.id)
+    func addBook(book : Cart) {
+        //Cart.cart_Dictionary.updateValue(book, forKey: book.id)
+        cart_array.append(book)
     }
     
 }

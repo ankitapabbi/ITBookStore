@@ -236,6 +236,37 @@ class DescViewController: UIViewController {
     
     @IBAction func btnCart(_ sender: UIButton) {
         
+        var b_id = self.lblBookId.text
+        var b_name = self.lblBookName.text
+        var b_price = self.lblPrice.text
+        
+        
+        if let cc = seletedCat{
+            switch(cc){
+            case 0:
+                var book = Cart(bookId: b_id!, bookName: b_name!,bookPrice: b_price!,bookCat: "Computer Science")
+                Cart.clicked_book.addBook(book: book)
+            case 1:
+                var book = Cart(bookId:b_id!, bookName: b_name!,bookPrice: b_price!,bookCat: "MultiMedia")
+                Cart.clicked_book.addBook(book: book)
+            case 2:
+                print("Networking")
+                var book = Cart(bookId:b_id!, bookName: b_name!,bookPrice: b_price!,bookCat: "Networking")
+                Cart.clicked_book.addBook(book: book)
+            case 3:
+                print("Software")
+                var book = Cart(bookId:b_id!, bookName: b_name!,bookPrice: b_price!,bookCat: "Software")
+                Cart.clicked_book.addBook(book: book)
+            case 4:
+                print("Programming")
+                var book = Cart(bookId:b_id!, bookName: b_name!,bookPrice: b_price!,bookCat: "Programming")
+                Cart.clicked_book.addBook(book: book)
+            default:
+                print("Something Went Wrong")
+            }
+        }
+        
+        
     }
     
     
