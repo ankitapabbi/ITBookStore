@@ -127,7 +127,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="coL-SG-BFc" detailTextLabel="4zb-pE-i5g" imageView="hFg-gs-dck" rowHeight="78" style="IBUITableViewCellStyleSubtitle" id="y8I-5R-Bkx">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="wishCell" textLabel="coL-SG-BFc" detailTextLabel="4zb-pE-i5g" imageView="hFg-gs-dck" rowHeight="78" style="IBUITableViewCellStyleSubtitle" id="y8I-5R-Bkx">
                                         <rect key="frame" x="0.0" y="28" width="414" height="78"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="y8I-5R-Bkx" id="bdV-Da-sNe">
@@ -162,6 +162,9 @@
                         <viewLayoutGuide key="safeArea" id="AXc-8e-eHI"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="WishList" image="wishlish" id="8tc-HP-z6V"/>
+                    <connections>
+                        <outlet property="tblWishList" destination="OG4-HS-Sty" id="652-EV-nT2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UbR-gL-qvj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -187,6 +187,30 @@ class DescViewController: UIViewController {
     
     @IBAction func btnWishList(_ sender: UIButton) {
         
+        var b_id = self.lblBookId.text
+        var b_name = self.lblBookName.text
+        
+        
+        if let cc = seletedCat{
+            switch(cc){
+            case 0:
+                var book = WishList(bookId: b_id!, bookName: b_name!,bookCat: "Science")
+                WishList.clicked_book.addBook(book: book)
+            case 1:
+                var book = WishList(bookId:b_id!, bookName: b_name!,bookCat: "MultiMedia")
+                 WishList.clicked_book.addBook(book: book)
+            case 2:
+                print("")
+            case 3:
+                print("")
+            case 4:
+                print("")
+            default:
+                print("Something Went Wrong")
+            }
+        }
+      
+        
     }
     
     @IBAction func btnCart(_ sender: UIButton) {

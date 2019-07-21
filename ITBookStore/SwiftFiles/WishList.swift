@@ -9,35 +9,28 @@
 import Foundation
 class WishList {
     
-    var id: Int
+    var id: String
     var bookName: String
-    var AuthorName: String
-    var price: String
-    var description: String
+    
     var category: String
-    static var clicked_book = Book()
-    static var wish_Dictionary = [Int:Book]()
-    var wish_array = Array<Book>()
+    static var clicked_book = WishList()
+    static var wish_Dictionary = [Int:WishList]()
+    var wish_array = Array<WishList>()
     
     init(){
-        self.id = Int()
+        self.id = String()
         self.bookName = String()
-        self.AuthorName = String()
-        self.price = String()
-        self.description = String()
         self.category = String()
         
     }
-    init(bookId: Int,bookName: String,bookAuthor:String,bookPrice:String,bookDesc:String,bookCat: String) {
+    init(bookId: String,bookName: String,bookCat: String) {
         self.id = bookId
         self.bookName = bookName
-        self.AuthorName = bookAuthor
-        self.price = bookPrice
-        self.description = bookDesc
         self.category = bookCat
     }
-    func addBook(book : Book) {
-        WishList.wish_Dictionary.updateValue(book, forKey: book.id)
+    func addBook(book : WishList) {
+       // WishList.wish_Dictionary.updateValue(book, forKey: Int(book.id)!)
+        wish_array.append(book)
     }
     
 }
