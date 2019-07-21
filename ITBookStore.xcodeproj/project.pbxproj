@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		01438AEB22E10B83007DA329 /* ValidateEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01438AEA22E10B83007DA329 /* ValidateEmail.swift */; };
 		014A963F22E504D9008F1B48 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A963E22E504D9008F1B48 /* SignUpViewController.swift */; };
+		014A964322E50A83008F1B48 /* ValidatePhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A964222E50A83008F1B48 /* ValidatePhoneNumber.swift */; };
+		014A964722E50AAD008F1B48 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A964622E50AAD008F1B48 /* Currency.swift */; };
 		016C68C222E203FD000BFFFC /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = 016C68C122E203FD000BFFFC /* Books.json */; };
 		016C68C522E204E4000BFFFC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C68C422E204E4000BFFFC /* Book.swift */; };
 		01F3138922E2E63000C7966F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3138822E2E63000C7966F /* ProfileViewController.swift */; };
@@ -34,6 +36,8 @@
 /* Begin PBXFileReference section */
 		01438AEA22E10B83007DA329 /* ValidateEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmail.swift; sourceTree = "<group>"; };
 		014A963E22E504D9008F1B48 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		014A964222E50A83008F1B48 /* ValidatePhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatePhoneNumber.swift; sourceTree = "<group>"; };
+		014A964622E50AAD008F1B48 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		016C68C122E203FD000BFFFC /* Books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Books.json; sourceTree = "<group>"; };
 		016C68C422E204E4000BFFFC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		01F3138822E2E63000C7966F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				01438AEA22E10B83007DA329 /* ValidateEmail.swift */,
+				014A964222E50A83008F1B48 /* ValidatePhoneNumber.swift */,
+				014A964622E50AAD008F1B48 /* Currency.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -221,6 +227,8 @@
 				7EDDCB4722D5BA7E00790F1B /* LoginViewController.swift in Sources */,
 				014A963F22E504D9008F1B48 /* SignUpViewController.swift in Sources */,
 				7E01CB2A22E40A91005E23B1 /* WishList.swift in Sources */,
+				014A964722E50AAD008F1B48 /* Currency.swift in Sources */,
+				014A964322E50A83008F1B48 /* ValidatePhoneNumber.swift in Sources */,
 				7E01CB2C22E40A9B005E23B1 /* Cart.swift in Sources */,
 				7EDDCB4522D5BA7E00790F1B /* AppDelegate.swift in Sources */,
 				7EB02BA622E060C1001E8765 /* MenuTabBarController.swift in Sources */,
