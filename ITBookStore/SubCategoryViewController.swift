@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
    
     
@@ -78,7 +80,7 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
        // let b = f.book_array[indexPath.row]
         print(indexPath.row)
         cell.textLabel?.text = array[indexPath.row].bookName
-        cell.detailTextLabel?.text = array[indexPath.row].price
+        cell.detailTextLabel?.text = String(Float(array[indexPath.row].price)!.currency())
         // click action on perticular customer name using tap gesture
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapToGoOnDesc(_:)))
         cell.tag = indexPath.row

@@ -54,7 +54,7 @@ class DescViewController: UIViewController {
                     self.lblBookId.text = String(value.id)
                     self.lblBookName.text = value.bookName
                     self.lblAuthorName.text = value.AuthorName
-                    self.lblPrice.text = value.price
+                    self.lblPrice.text = String((Float(value.price)?.currency())!)
                     self.tvDesc.text = value.description
                 }
                
@@ -87,7 +87,7 @@ class DescViewController: UIViewController {
                     self.lblBookId.text = String(value.id)
                     self.lblBookName.text = value.bookName
                     self.lblAuthorName.text = value.AuthorName
-                    self.lblPrice.text = value.price
+                    self.lblPrice.text = String((Float(value.price)?.currency())!)
                     self.tvDesc.text = value.description
                 }
              
@@ -118,7 +118,7 @@ class DescViewController: UIViewController {
                     self.lblBookId.text = String(value.id)
                     self.lblBookName.text = value.bookName
                     self.lblAuthorName.text = value.AuthorName
-                    self.lblPrice.text = value.price
+                    self.lblPrice.text = String((Float(value.price)?.currency())!)
                     self.tvDesc.text = value.description
                 }
             case 3:
@@ -148,7 +148,7 @@ class DescViewController: UIViewController {
                     self.lblBookId.text = String(value.id)
                     self.lblBookName.text = value.bookName
                     self.lblAuthorName.text = value.AuthorName
-                    self.lblPrice.text = value.price
+                    self.lblPrice.text = String((Float(value.price)?.currency())!)
                     self.tvDesc.text = value.description
                 }
             case 4:
@@ -178,7 +178,7 @@ class DescViewController: UIViewController {
                     self.lblBookId.text = String(value.id)
                     self.lblBookName.text = value.bookName
                     self.lblAuthorName.text = value.AuthorName
-                    self.lblPrice.text = value.price
+                    self.lblPrice.text = String((Float(value.price)?.currency())!)
                     self.tvDesc.text = value.description
                 }
             default:

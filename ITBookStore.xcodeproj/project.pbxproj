@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		01438AEB22E10B83007DA329 /* ValidateEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01438AEA22E10B83007DA329 /* ValidateEmail.swift */; };
+		014A963B22E4F575008F1B48 /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A963A22E4F575008F1B48 /* Currency.swift */; };
+		014A963D22E4F5A8008F1B48 /* ValidateMobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A963C22E4F5A8008F1B48 /* ValidateMobile.swift */; };
+		014A963F22E504D9008F1B48 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A963E22E504D9008F1B48 /* SignUpViewController.swift */; };
 		016C68C222E203FD000BFFFC /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = 016C68C122E203FD000BFFFC /* Books.json */; };
 		016C68C522E204E4000BFFFC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C68C422E204E4000BFFFC /* Book.swift */; };
 		01F3138922E2E63000C7966F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3138822E2E63000C7966F /* ProfileViewController.swift */; };
@@ -32,6 +35,9 @@
 
 /* Begin PBXFileReference section */
 		01438AEA22E10B83007DA329 /* ValidateEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmail.swift; sourceTree = "<group>"; };
+		014A963A22E4F575008F1B48 /* Currency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
+		014A963C22E4F5A8008F1B48 /* ValidateMobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateMobile.swift; sourceTree = "<group>"; };
+		014A963E22E504D9008F1B48 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		016C68C122E203FD000BFFFC /* Books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Books.json; sourceTree = "<group>"; };
 		016C68C422E204E4000BFFFC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		01F3138822E2E63000C7966F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				01438AEA22E10B83007DA329 /* ValidateEmail.swift */,
+				014A963A22E4F575008F1B48 /* Currency.swift */,
+				014A963C22E4F5A8008F1B48 /* ValidateMobile.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,6 +140,7 @@
 				01F3139022E2EC2100C7966F /* ContactUsViewController.swift */,
 				7E01CB2722E3CAC8005E23B1 /* DescViewController.swift */,
 				7E01CB2D22E44266005E23B1 /* CartLayoutTableViewCell.swift */,
+				014A963E22E504D9008F1B48 /* SignUpViewController.swift */,
 			);
 			path = ITBookStore;
 			sourceTree = "<group>";
@@ -216,13 +225,16 @@
 				7EB02BAC22E12939001E8765 /* WishListViewController.swift in Sources */,
 				7EB02BAE22E12947001E8765 /* CartViewController.swift in Sources */,
 				7EDDCB4722D5BA7E00790F1B /* LoginViewController.swift in Sources */,
+				014A963F22E504D9008F1B48 /* SignUpViewController.swift in Sources */,
 				7E01CB2A22E40A91005E23B1 /* WishList.swift in Sources */,
 				7E01CB2C22E40A9B005E23B1 /* Cart.swift in Sources */,
 				7EDDCB4522D5BA7E00790F1B /* AppDelegate.swift in Sources */,
 				7EB02BA622E060C1001E8765 /* MenuTabBarController.swift in Sources */,
 				7EB02BC222E2262F001E8765 /* SubCategoryViewController.swift in Sources */,
 				01F3138D22E2E9AE00C7966F /* MoreViewController.swift in Sources */,
+				014A963B22E4F575008F1B48 /* Currency.swift in Sources */,
 				7EB02BAA22E12920001E8765 /* FeaturedViewController.swift in Sources */,
+				014A963D22E4F5A8008F1B48 /* ValidateMobile.swift in Sources */,
 				01F3139122E2EC2100C7966F /* ContactUsViewController.swift in Sources */,
 				7E01CB2822E3CAC8005E23B1 /* DescViewController.swift in Sources */,
 			);
