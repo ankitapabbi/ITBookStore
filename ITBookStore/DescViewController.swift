@@ -36,10 +36,13 @@ class DescViewController: UIViewController {
                         readJsonFileArray(jsonFileName: "Books", rBookId: 6)
                     case 2:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 11)
                     case 3:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 16)
                     case 4:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 21)
                     default:
                         print("Something Went Wrong")
                     }
@@ -67,10 +70,13 @@ class DescViewController: UIViewController {
                         readJsonFileArray(jsonFileName: "Books", rBookId: 7)
                     case 2:
                         print("")
+                         readJsonFileArray(jsonFileName: "Books", rBookId: 12)
                     case 3:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 17)
                     case 4:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 22)
                     default:
                         print("Something Went Wrong")
                     }
@@ -95,10 +101,13 @@ class DescViewController: UIViewController {
                         readJsonFileArray(jsonFileName: "Books", rBookId: 8)
                     case 2:
                         print("")
+                         readJsonFileArray(jsonFileName: "Books", rBookId: 13)
                     case 3:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 18)
                     case 4:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 23)
                     default:
                         print("Something Went Wrong")
                     }
@@ -122,10 +131,13 @@ class DescViewController: UIViewController {
                         readJsonFileArray(jsonFileName: "Books", rBookId: 9)
                     case 2:
                         print("")
+                         readJsonFileArray(jsonFileName: "Books", rBookId: 14)
                     case 3:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 19)
                     case 4:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 24)
                     default:
                         print("Something Went Wrong")
                     }
@@ -149,10 +161,13 @@ class DescViewController: UIViewController {
                         readJsonFileArray(jsonFileName: "Books", rBookId: 10)
                     case 2:
                         print("")
+                         readJsonFileArray(jsonFileName: "Books", rBookId: 15)
                     case 3:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 20)
                     case 4:
                         print("")
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 25)
                     default:
                         print("Something Went Wrong")
                     }
@@ -194,17 +209,23 @@ class DescViewController: UIViewController {
         if let cc = seletedCat{
             switch(cc){
             case 0:
-                var book = WishList(bookId: b_id!, bookName: b_name!,bookCat: "Science")
+                var book = WishList(bookId: b_id!, bookName: b_name!,bookCat: "Computer Science")
                 WishList.clicked_book.addBook(book: book)
             case 1:
                 var book = WishList(bookId:b_id!, bookName: b_name!,bookCat: "MultiMedia")
                  WishList.clicked_book.addBook(book: book)
             case 2:
-                print("")
+                print("Networking")
+                var book = WishList(bookId:b_id!, bookName: b_name!,bookCat: "Networking")
+                WishList.clicked_book.addBook(book: book)
             case 3:
-                print("")
+                print("Software")
+                var book = WishList(bookId:b_id!, bookName: b_name!,bookCat: "Software")
+                WishList.clicked_book.addBook(book: book)
             case 4:
-                print("")
+                print("Programming")
+                var book = WishList(bookId:b_id!, bookName: b_name!,bookCat: "Programming")
+                WishList.clicked_book.addBook(book: book)
             default:
                 print("Something Went Wrong")
             }

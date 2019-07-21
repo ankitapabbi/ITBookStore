@@ -23,8 +23,8 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
         if let sCat = selectedCategory {
             switch(sCat){
             case 0:
-                print("Science")
-                 readJsonFileArray(jsonFileName: "Books", category: "Science")
+                print("Computer Science")
+                 readJsonFileArray(jsonFileName: "Books", category: "Computer Science")
 //                for value in array
 //                {
 //                    print(value.bookName)
@@ -43,6 +43,15 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
 //                {
 //                    array.append(value)
 //                }
+            case 2:
+                readJsonFileArray(jsonFileName: "Books", category: "Networking")
+                
+            case 3:
+                 readJsonFileArray(jsonFileName: "Books", category: "Software")
+            
+            case 4:
+                 readJsonFileArray(jsonFileName: "Books", category: "Programming")
+                
             default:
                 print("Something Went Wrong")
             }

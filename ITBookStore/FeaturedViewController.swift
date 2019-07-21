@@ -12,7 +12,7 @@ class FeaturedViewController: UIViewController,UITableViewDelegate,UITableViewDa
     
     
 var book_array = Array<Book>()
-    var cat_array = ["Science","MultiMedia"]
+    var cat_array = ["Computer Science","MultiMedia","Networking","Software","Programming"]
     var count = 0
     
 var bookList = [Book]()
