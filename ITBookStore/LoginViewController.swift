@@ -50,6 +50,7 @@ class LoginViewController: UIViewController {
     @IBAction func btnLogin(_ sender: Any) {
         var email = self.txtEmail.text!
         var password = self.txtPassword.text!
+        
         let userDefault = UserDefaults.standard
         
         if let plist = Bundle.main.path(forResource: "UserInfo", ofType: "plist")

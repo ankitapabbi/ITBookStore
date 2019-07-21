@@ -7,6 +7,10 @@
 	<key>Users</key>
 	<array>
 		<dict>
+			<key>userPhoneNumber</key>
+			<string>6478383105</string>
+			<key>userName</key>
+			<string>Ankita Pabbi</string>
 			<key>userId</key>
 			<integer>1</integer>
 			<key>userEmail</key>
@@ -15,6 +19,10 @@
 			<string>anku123</string>
 		</dict>
 		<dict>
+			<key>userPhoneNumber</key>
+			<string>6471234567</string>
+			<key>userName</key>
+			<string>Vishal Pabbi</string>
 			<key>userId</key>
 			<integer>2</integer>
 			<key>userEmail</key>
@@ -23,6 +31,10 @@
 			<string>vishal123</string>
 		</dict>
 		<dict>
+			<key>userPhoneNumber</key>
+			<string>6470987654</string>
+			<key>userName</key>
+			<string>Dikha Sharma</string>
 			<key>userId</key>
 			<integer>3</integer>
 			<key>userEmail</key>
@@ -31,14 +43,22 @@
 			<string>diksha123</string>
 		</dict>
 		<dict>
+			<key>userPhoneNumber</key>
+			<string>6475623440</string>
+			<key>userName</key>
+			<string>Sidharth Nayyar</string>
 			<key>userId</key>
 			<integer>4</integer>
 			<key>userEmail</key>
-			<string>S@gmail.com</string>
+			<string>sid@gmail.com</string>
 			<key>password</key>
-			<string>s123</string>
+			<string>sid123</string>
 		</dict>
 		<dict>
+			<key>userPhoneNumber</key>
+			<string>6479871234</string>
+			<key>userName</key>
+			<string>Netra Bhargava</string>
 			<key>userId</key>
 			<integer>5</integer>
 			<key>userEmail</key>
