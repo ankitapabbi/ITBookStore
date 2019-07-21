@@ -71,8 +71,8 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
         let  cell = tableView.dequeueReusableCell(withIdentifier: "subCatCell") as! UITableViewCell
        // let b = f.book_array[indexPath.row]
         print(indexPath.row)
-        cell.textLabel?.text = "Book Name : \(array[indexPath.row].bookName)"
-        cell.detailTextLabel?.text = "Price : \(array[indexPath.row].price)"
+        cell.textLabel?.text = array[indexPath.row].bookName
+        cell.detailTextLabel?.text = array[indexPath.row].price
         // click action on perticular customer name using tap gesture
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapToGoOnDesc(_:)))
         cell.tag = indexPath.row

@@ -20,10 +20,13 @@ class WishListViewController: UIViewController ,UITableViewDelegate,UITableViewD
         self.tblWishList.dataSource = self
         self.tblWishList.reloadData()
         
+        
+        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         self.tblWishList.reloadData()
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,6 +46,41 @@ class WishListViewController: UIViewController ,UITableViewDelegate,UITableViewD
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let book = WishList.clicked_book.wish_array[indexPath.row].bookName
+        let delete = UIContextualAction(style: .destructive, title: "Delete") { (contextualAction, view,
+            actionPerformed: @escaping (Bool) -> Void) in
+            
+            let alert = UIAlertController(title: "Delete Book", message: "Are you sure you want to delete this book : \(book) ?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (alertAction) in
+                actionPerformed(false)
+            }))
+            alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { (alertAction) in
+                // Perform delete
+                WishList.clicked_book.deleteBook(index: indexPath.row)
+                //self.tblWishList.reloadData()
+                self.tblWishList.deleteRows(at: [indexPath], with: .automatic)
+                actionPerformed(true)
+            }))
+            self.present(alert,animated: true)
+            
+           
+        }
+        delete.image = UIImage(named: "deleteicon")
+        return UISwipeActionsConfiguration(actions: [delete])
+    }
+    func application(_ application: UIApplication, didReceiveRemoteNotification
+        userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        
+        // increase badge count, but no need if you include content-available
+        
+        application.applicationIconBadgeNumber = application.applicationIconBadgeNumber + 1
+        
+    }
+
     /*
     // MARK: - Navigation
 

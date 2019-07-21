@@ -34,5 +34,9 @@ class Cart {
         //Cart.cart_Dictionary.updateValue(book, forKey: book.id)
         cart_array.append(book)
     }
+    func deleteBook(index : Int) {
+        // WishList.wish_Dictionary.updateValue(book, forKey: Int(book.id)!)
+        cart_array.remove(at: index)
+    }
     
 }

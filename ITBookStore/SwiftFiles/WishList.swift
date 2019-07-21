@@ -32,5 +32,9 @@ class WishList {
        // WishList.wish_Dictionary.updateValue(book, forKey: Int(book.id)!)
         wish_array.append(book)
     }
+    func deleteBook(index : Int) {
+        // WishList.wish_Dictionary.updateValue(book, forKey: Int(book.id)!)
+        wish_array.remove(at: index)
+    }
     
 }
