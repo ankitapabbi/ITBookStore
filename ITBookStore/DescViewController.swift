@@ -18,6 +18,7 @@ class DescViewController: UIViewController {
   
     @IBOutlet weak var tvDesc: UITextView!
     var selectedBook : Int?
+    var seletedCat : Int?
     var array=Array<Book>()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,23 @@ class DescViewController: UIViewController {
             switch(dd){
             case 0:
                 print("0")
-                readJsonFileArray(jsonFileName: "Books", rBookId: 1)
+                if let cc = seletedCat{
+                    switch(cc){
+                    case 0:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 1)
+                    case 1:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 6)
+                    case 2:
+                        print("")
+                    case 3:
+                        print("")
+                    case 4:
+                        print("")
+                    default:
+                        print("Something Went Wrong")
+                    }
+                }
+                //readJsonFileArray(jsonFileName: "Books", rBookId: 1)
                 
                 for value in array
                 {
@@ -41,7 +58,23 @@ class DescViewController: UIViewController {
                
             case 1:
                 print("1")
-                readJsonFileArray(jsonFileName: "Books", rBookId: 2)
+                
+                if let cc = seletedCat{
+                    switch(cc){
+                    case 0:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 2)
+                    case 1:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 7)
+                    case 2:
+                        print("")
+                    case 3:
+                        print("")
+                    case 4:
+                        print("")
+                    default:
+                        print("Something Went Wrong")
+                    }
+                }
                 
                 for value in array
                 {
@@ -54,7 +87,22 @@ class DescViewController: UIViewController {
              
             case 2:
                 print("2")
-                readJsonFileArray(jsonFileName: "Books", rBookId: 3)
+                if let cc = seletedCat{
+                    switch(cc){
+                    case 0:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 3)
+                    case 1:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 8)
+                    case 2:
+                        print("")
+                    case 3:
+                        print("")
+                    case 4:
+                        print("")
+                    default:
+                        print("Something Went Wrong")
+                    }
+                }
                
                 for value in array
                 {
@@ -66,7 +114,22 @@ class DescViewController: UIViewController {
                 }
             case 3:
                 print("3")
-                readJsonFileArray(jsonFileName: "Books", rBookId: 4)
+                if let cc = seletedCat{
+                    switch(cc){
+                    case 0:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 4)
+                    case 1:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 9)
+                    case 2:
+                        print("")
+                    case 3:
+                        print("")
+                    case 4:
+                        print("")
+                    default:
+                        print("Something Went Wrong")
+                    }
+                }
                
                 for value in array
                 {
@@ -78,7 +141,22 @@ class DescViewController: UIViewController {
                 }
             case 4:
                 print("4")
-                readJsonFileArray(jsonFileName: "Books", rBookId: 5)
+                if let cc = seletedCat{
+                    switch(cc){
+                    case 0:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 5)
+                    case 1:
+                        readJsonFileArray(jsonFileName: "Books", rBookId: 10)
+                    case 2:
+                        print("")
+                    case 3:
+                        print("")
+                    case 4:
+                        print("")
+                    default:
+                        print("Something Went Wrong")
+                    }
+                }
                 
                 for value in array
                 {
@@ -106,6 +184,18 @@ class DescViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    @IBAction func btnWishList(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func btnCart(_ sender: UIButton) {
+        
+    }
+    
+    
+    
+    
 
     
     func readJsonFileArray(jsonFileName: String, rBookId:Int)

@@ -493,6 +493,9 @@
                                 <state key="normal" title="Add To WishList">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnWishList:" destination="6DB-VT-keb" eventType="touchUpInside" id="tfj-yu-Jig"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WF3-K1-yOr">
                                 <rect key="frame" x="242" y="629" width="152" height="50"/>
@@ -502,6 +505,9 @@
                                 <state key="normal" title="Add To Cart">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnCart:" destination="6DB-VT-keb" eventType="touchUpInside" id="Xhu-y6-UQd"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

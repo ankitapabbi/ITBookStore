@@ -76,6 +76,7 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let descBook = sb.instantiateViewController(withIdentifier: "furtherDesc") as! DescViewController
         descBook.selectedBook = sender.view?.tag ?? 0
+        descBook.seletedCat = self.selectedCategory
         
         self.navigationController?.pushViewController(descBook,animated: true)
         // to get perticular index
