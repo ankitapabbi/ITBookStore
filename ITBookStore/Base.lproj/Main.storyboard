@@ -82,7 +82,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8k1-Db-gQ1">
                                 <rect key="frame" x="98" y="583" width="219" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.47226500238355718" green="0.40861259608663714" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.47352951765060425" green="0.57521575689315796" blue="0.66275900602340698" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="USE FACE ID">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -399,7 +399,7 @@
                     </view>
                     <connections>
                         <outlet property="tblSubCategory" destination="0Eg-7K-o8d" id="qSn-qG-CMS"/>
-                        <segue destination="6DB-VT-keb" kind="show" identifier="furtherDesc" id="MzQ-SB-U5f"/>
+                        <segue destination="6DB-VT-keb" kind="show" identifier="" id="MzQ-SB-U5f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFQ-cz-13P" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -409,43 +409,43 @@
         <!--Book Detail-->
         <scene sceneID="Czg-B7-gk7">
             <objects>
-                <viewController title="Book Detail" id="6DB-VT-keb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="furtherDesc" title="Book Detail" id="6DB-VT-keb" customClass="DescViewController" customModule="ITBookStore" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="P1Q-8M-VVK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I53-Bp-XkE">
-                                <rect key="frame" x="20" y="109" width="66" height="24"/>
+                                <rect key="frame" x="20" y="109" width="71" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yR7-V8-xqk">
-                                <rect key="frame" x="20" y="248" width="44" height="24"/>
+                                <rect key="frame" x="20" y="248" width="49" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5If-uh-hCq">
-                                <rect key="frame" x="20" y="205" width="115" height="24"/>
+                                <rect key="frame" x="20" y="205" width="124" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Book Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfo-YF-3xa">
-                                <rect key="frame" x="20" y="157" width="101" height="24"/>
+                                <rect key="frame" x="20" y="157" width="108" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tsi-hU-ecN">
-                                <rect key="frame" x="22" y="295" width="100" height="24"/>
+                                <rect key="frame" x="22" y="295" width="110" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -507,6 +507,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="VJj-dW-fs1"/>
                     </view>
+                    <connections>
+                        <outlet property="lblAuthorName" destination="ySD-3x-54U" id="Jaf-k7-Vaa"/>
+                        <outlet property="lblBookId" destination="ZmH-TP-1e5" id="vca-fr-fll"/>
+                        <outlet property="lblBookName" destination="CzH-96-muE" id="RZS-mb-9XX"/>
+                        <outlet property="lblDesc" destination="Tsi-hU-ecN" id="H2m-uc-QwH"/>
+                        <outlet property="lblPrice" destination="b9L-hp-Moc" id="sOp-5a-tbf"/>
+                        <outlet property="tvDesc" destination="CYO-Gw-5DC" id="Bav-jd-7LA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jno-I0-Y9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

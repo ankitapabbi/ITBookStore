@@ -23,19 +23,26 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
         if let sCat = selectedCategory {
             switch(sCat){
             case 0:
-//                 readJsonFileArray(jsonFileName: "Books", category: "Science")
+                print("Science")
+                 readJsonFileArray(jsonFileName: "Books", category: "Science")
 //                for value in array
 //                {
 //                    print(value.bookName)
 //                }
-                let delegate = UIApplication.shared.delegate as! AppDelegate
-                for (key,value) in delegate.books["Science"]!
-                {
-                    array.append(value)
-                }
+//                let delegate = UIApplication.shared.delegate as! AppDelegate
+//                for (key,value) in delegate.books["Science"]!
+//                {
+//                    array.append(value)
+//                }
                 
             case 1:
                 print("MultiMedia")
+                 readJsonFileArray(jsonFileName: "Books", category: "MultiMedia")
+//                let delegate = UIApplication.shared.delegate as! AppDelegate
+//                for (key,value) in delegate.books["MultiMedia"]!
+//                {
+//                    array.append(value)
+//                }
             default:
                 print("Something Went Wrong")
             }
@@ -57,8 +64,24 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
         print(indexPath.row)
         cell.textLabel?.text = "Book Name : \(array[indexPath.row].bookName)"
         cell.detailTextLabel?.text = "Price : \(array[indexPath.row].price)"
-//
+        // click action on perticular customer name using tap gesture
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapToGoOnDesc(_:)))
+        cell.tag = indexPath.row
+        cell.addGestureRecognizer(tapGesture)
+
         return cell
+    }
+    @objc func tapToGoOnDesc(_ sender: UITapGestureRecognizer) {
+        print(sender.view!.tag)// to display index
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let descBook = sb.instantiateViewController(withIdentifier: "furtherDesc") as! DescViewController
+        descBook.selectedBook = sender.view?.tag ?? 0
+        
+        self.navigationController?.pushViewController(descBook,animated: true)
+        // to get perticular index
+        //            Book.clicked_book = self.book_array[(sender.view?.tag)!]
+        //            self.performSegue(withIdentifier: "goToSubCat", sender: nil)
+        
     }
     /*
     // MARK: - Navigation
