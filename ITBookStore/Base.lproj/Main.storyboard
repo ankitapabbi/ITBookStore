@@ -203,6 +203,15 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="About us"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfO-x2-I9k">
+                                <rect key="frame" x="30" y="281" width="354" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <segue destination="BhK-qW-ulX" kind="unwind" unwindAction="unWindLogoutFromAnyScreenWithStoryboard:" id="Jkp-sY-jIh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="prT-Y2-RN8"/>
@@ -210,6 +219,7 @@
                     <tabBarItem key="tabBarItem" systemItem="more" id="Dm3-L1-bdN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kKD-ve-WZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BhK-qW-ulX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4040.579710144928" y="839.73214285714278"/>
         </scene>
