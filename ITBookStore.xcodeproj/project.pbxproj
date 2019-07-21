@@ -10,6 +10,7 @@
 		01438AEB22E10B83007DA329 /* ValidateEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01438AEA22E10B83007DA329 /* ValidateEmail.swift */; };
 		014A963F22E504D9008F1B48 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A963E22E504D9008F1B48 /* SignUpViewController.swift */; };
 		014A964322E50A83008F1B48 /* ValidatePhoneNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A964222E50A83008F1B48 /* ValidatePhoneNumber.swift */; };
+		014A964922E50E8A008F1B48 /* CurrencyAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A964822E50E8A008F1B48 /* CurrencyAdd.swift */; };
 		016C68C222E203FD000BFFFC /* Books.json in Resources */ = {isa = PBXBuildFile; fileRef = 016C68C122E203FD000BFFFC /* Books.json */; };
 		016C68C522E204E4000BFFFC /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016C68C422E204E4000BFFFC /* Book.swift */; };
 		01F3138922E2E63000C7966F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3138822E2E63000C7966F /* ProfileViewController.swift */; };
@@ -36,6 +37,7 @@
 		01438AEA22E10B83007DA329 /* ValidateEmail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateEmail.swift; sourceTree = "<group>"; };
 		014A963E22E504D9008F1B48 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		014A964222E50A83008F1B48 /* ValidatePhoneNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatePhoneNumber.swift; sourceTree = "<group>"; };
+		014A964822E50E8A008F1B48 /* CurrencyAdd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyAdd.swift; sourceTree = "<group>"; };
 		016C68C122E203FD000BFFFC /* Books.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Books.json; sourceTree = "<group>"; };
 		016C68C422E204E4000BFFFC /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		01F3138822E2E63000C7966F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			children = (
 				01438AEA22E10B83007DA329 /* ValidateEmail.swift */,
 				014A964222E50A83008F1B48 /* ValidatePhoneNumber.swift */,
+				014A964822E50E8A008F1B48 /* CurrencyAdd.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -229,6 +232,7 @@
 				7EDDCB4522D5BA7E00790F1B /* AppDelegate.swift in Sources */,
 				7EB02BA622E060C1001E8765 /* MenuTabBarController.swift in Sources */,
 				7EB02BC222E2262F001E8765 /* SubCategoryViewController.swift in Sources */,
+				014A964922E50E8A008F1B48 /* CurrencyAdd.swift in Sources */,
 				01F3138D22E2E9AE00C7966F /* MoreViewController.swift in Sources */,
 				7EB02BAA22E12920001E8765 /* FeaturedViewController.swift in Sources */,
 				01F3139122E2EC2100C7966F /* ContactUsViewController.swift in Sources */,
