@@ -1,85 +1,209 @@
 {
     "books": [
-                {
-                    "id": "1",
-                    "book_name": "Data Science",
-                    "author_name": "Krishan",
-                    "price": "90",
-                    "desc": "Welcome to ios 1",
-                    "category": "Science"
-                },
-                {
-                    "id": "2",
-                    "book_name": "Data Structures",
-                    "author_name": "Parkash",
-                    "price": "19",
-                    "desc": "Welcome to ios 2",
-                    "category": "Science"
-                },
-                {
-                    "id": "3",
-                    "book_name": "Android Programming",
-                    "author_name": "Rahul",
-                    "price": "66",
-                    "desc": "Welcome to ios 3",
-                    "category": "Science"
-                },
-                {
-                    "id": "4",
-                    "book_name": "DataBase",
-                    "author_name": "Kishore",
-                    "price": "40",
-                    "desc": "Welcome to ios 4",
-                    "category": "Science"
-                },
-                {
-                    "id": "5",
-                    "book_name": "Python",
-                    "author_name": "Rohit",
-                    "price": "55",
-                    "desc": "Welcome to ios 5",
-                    "category": "Science"
-                },
-                {
-                    "id": "6",
-                    "book_name": "Abc 1",
-                    "author_name": "Krishan",
-                    "price": "90",
-                    "desc": "Welcome to ios 1",
-                    "category": "MultiMedia"
-                    
-                },
-                {
-                    "id": "7",
-                    "book_name": "Abc 2",
-                    "author_name": "Parkash",
-                    "price": "19",
-                    "desc": "Welcome to ios 2",
-                    "category": "MultiMedia"
-                },
-                {
-                    "id": "8",
-                    "book_name": "Abc 3",
-                    "author_name": "Rahul",
-                    "price": "66",
-                    "desc": "Welcome to ios 3",
-                    "category": "MultiMedia"
-                },
-                {
-                    "id": "9",
-                    "book_name": "Abc 4",
-                    "author_name": "Kishore",
-                    "price": "40",
-                    "desc": "Welcome to ios 4",
-                    "category": "MultiMedia"
-                },
-                {
-                    "id": "10",
-                    "book_name": "Abc 5",
-                    "author_name": "Rohit",
-                    "price": "55",
-                    "desc": "Welcome to ios 5",
-                    "category": "MultiMedia"
-                }
+        {
+            "id": "1",
+            "book_name": "The C Programming Language",
+            "author_name": "elissa",
+            "price": "90",
+            "desc": "the latter of whom originally designed and implemented the language, as well as co-designed the Unix operating system with which development of the language was closely intertwined.",
+            "category": " Computer Science"
+        },
+        {
+            "id": "2",
+            "book_name": "Design Patterns: Elements of Reusable Object-Oriented Software",
+            "author_name": "wisley",
+            "price": "19",
+            "desc": "t has been influential to the field of software engineering and is regarded as an important source for object-oriented design theory and practice",
+            "category": "Computer Science"
+        },
+        {
+            "id": "3",
+            "book_name": "The Art of Computer Programming",
+            "author_name": "Donald",
+            "price": "66",
+            "desc": "The Art of Computer Programming (TAOCP) is a comprehensive monograph written by computer scientist Donald Knuth that covers many kinds of programming algorithms and their analysis.",
+            "category": "Computer Science"
+        },
+        {
+            "id": "4",
+            "book_name": "JavaScript: The Good Parts",
+            "author_name": "Douglas",
+            "price": "40",
+            "desc": "Most programming languages contain good and bad parts, but JavaScript has more than its share of the bad, having been developed and released in a hurry before it could be refined. This authoritative book scrapes away these bad features to reveal a subset of JavaScript that's more reliable, readable, and maintainable than the language as a whole—a subset you can use to create truly extensible and efficient code.",
+            "category": "Computer Science"
+        },
+        {
+            "id": "5",
+            "book_name": "The Clean Coder: A Code of Conduct for Professional Programmers",
+            "author_name": "Robert C. Martin",
+            "price": "55",
+            "desc": "In The Clean Coder: A Code of Conduct for Professional Programmers, legendary software expert Robert C. Martin introduces the disciplines, techniques, tools, and practices of true software craftsmanship. This book is packed with practical advice–about everything from estimating and coding to refactoring and testing. It covers much more than technique: It is about attitude. Martin shows how to approach software development with honor, self-respect, and pride; work well and work clean; communicate and estimate faithfully; face difficult decisions with clarity and honesty; and understand that deep knowledge comes with a responsibility to act.",
+            "category": "Computer Science"
+        },
+        {
+            "id": "6",
+            "book_name": "Multimedia:Photography and Science",
+            "author_name": "Eden",
+            "price": "90",
+            "desc": "All about photography,software related to it and science behind the softwares",
+            "category": "MultiMedia"
+            
+        },
+        {
+            "id": "7",
+            "book_name": "Designing and Developing Multimedia",
+            "author_name": "Hiden",
+            "price": "19",
+            "desc": "The new media industry needs the producer who manages, the director with creative vision, and the writer who documents the development process. This comprehensive book is a practical, skills-oriented book for the producer, director, and writer of multimedia. It provides readers with a sound grounding in the concepts of interactive design, and then takes them through the step-by-step process of developing the multimedia product. ",
+            "category": "MultiMedia"
+        },
+        {
+            "id": "8",
+            "book_name": "Multimedia:Making It Work",
+            "author_name": "paul",
+            "price": "66",
+            "desc": "Comprehensive coverage--competition doesn't provide nearly the same depth or detail of multimedia product descriptions as Osborne's title does",
+            "category": "MultiMedia"
+        },
+        {
+            "id": "9",
+            "book_name": "Multimedia Projects in Education",
+            "author_name": "Ann E. Barron",
+            "price": "40",
+            "desc": "Building on the materials in the two previous successful editions,Multimedia Projects in Education",
+            "category": "MultiMedia"
+        },
+        {
+            "id": "10",
+            "book_name": "Multimedia Systems",
+            "author_name": "Klara",
+            "price": "55",
+            "desc": "Multimedia Systems discusses the basic characteristics of multimedia operating systems, networking and communication, and multimedia middleware systems.",
+            "category": "MultiMedia"
+        },
+        {
+            "id": "11",
+            "book_name": "Networking Science",
+            "author_name": "Evan",
+            "price": "90",
+            "desc": "netwoking termonolgy",
+            "category": "Networking"
+            
+        },
+        {
+            "id": "12",
+            "book_name": "newtworking for dummies",
+            "author_name": "Parkash",
+            "price": "19",
+            "desc": "Networking for Dummies",
+            "category": "Networking"
+        },
+        {
+            "id": "13",
+            "book_name": "Computer Networking: A Top-Down Approach",
+            "author_name": "Keith W. Ross",
+            "price": "66",
+            "desc": "Appropriate for a first course on computer networking, this textbook describes the architecture and function of the application, transport, network, and link layers of the internet protocol stack, then examines audio and video networking applications, the underpinnings of encryption and network security, and the key issues of network management.",
+            "category": "Networking"
+        },
+        {
+            "id": "14",
+            "book_name": "Fundamentals of Networking Systems",
+            "author_name": "Sham Navathe",
+            "price": "40",
+            "desc": "Fundamentals of Database Systems is a leading example of a database text that approaches the subject from the technical, rather than the business perspective. It offers instructors more than enough material to choose from as they seek to balance coverage of theoretical with practical material, design with programming, application concerns with implementation issues, and items of historical interest with a view of cutting edge topics.",
+            "category": "Networking"
+        },
+        {
+            "id": "15",
+            "book_name": "Coding for Beginners in easy steps",
+            "author_name": "Rohit",
+            "price": "55",
+            "desc": "Coding for Beginners in easy steps has an easy-to-follow style that will appeal to anyone, of any age, who wants to begin coding computer programs. You need have no previous knowledge of any computer programming language so it's ideal for the newcomer, including youngsters needing to learn programming basics for the school curriculum. The book instructs you how to write code to create your own computer programs.",
+            "category": "Networking"
+        },
+        {
+            "id": "16",
+            "book_name": "Basic Drafting: A Manual for Beginning Drafters",
+            "author_name": "Leland Scott",
+            "price": "70",
+            "desc": "This book meets the requirements for a High School or College beginning drafting class. Written in an easy-to-follow approach, it can be used for individual study or class-room setting to prepare the student for advanced board drafting or CAD drafting. The book stays 'on the subject' to teach the basic principles and techniques of mechanical drawing. It introduces the instruments and explains their use before proceeding through the topics, one by one, of lettering, orthographic projection, measuring and scaling, dimensioning, sectioning, pictorial drawings, and sketching. There are ample practice exercises included in the book.",
+            "category": "Software"
+            
+        },
+        {
+            "id": "17",
+            "book_name": "Semantic Applications: Methodology, Technology",
+            "author_name": "Thomas Hoppe",
+            "price": "93",
+            "desc": "This book describes methodologies for developing semantic applications. Semantic applications are software applications which explicitly or implicitly use the semantics, i.e. the meaning of a domain terminology, in order to improve usability, correctness, and completeness. An example is semantic search, where synonyms and related terms are used for enriching the results of a simple text-based search. Ontologies, thesauri or controlled vocabularies are the centerpiece of semantic applications.",
+            "category": "Software"
+        },
+        {
+            "id": "18",
+            "book_name": "Algorithm Design",
+            "author_name": "Eva Tardos",
+            "price": "66",
+            "desc": "introduces algorithms by looking at the real-world problems that motivate them. The book teaches students a range of design and analysis techniques for problems that arise in computing applications.",
+            "category": "Software"
+        },
+        {
+            "id": "19",
+            "book_name": "Soft Skills: The Software Developer's Life Manual",
+            "author_name": "John Z. Sonmez",
+            "price": "40",
+            "desc": "The software developer''s life manual is a unique guide, offering techniques and practices for a more satisfying life as a professional software developer. In it, developer and life coach John Sonmez addresses a wide range of important "soft" topics",
+            "category": "Software"
+        },
+        {
+            "id": "20",
+            "book_name": "Design Patterns: Elements of Reusable Object-Oriented Software",
+            "author_name": "Erich Gamma",
+            "price": "55",
+            "desc": " Elements of Reusable Object-Oriented Software is a software engineering book describing software design patterns. ",
+            "category": "Software"
+        },
+        {
+            "id": "21",
+            "book_name": "Computer Graphics",
+            "author_name": "Chennakesava R. Alavla",
+            "price": "90",
+            "desc": "The Advantages of Interactive Graphics, Representative Uses of Computer Graphics, Classification of Applications, Development of Hardware and Software for Computer Graphics, Conceptual Framework for Interactive Graphics.",
+            "category": "Programming"
+            
+        },
+        {
+            "id": "22",
+            "book_name": "Database Management System",
+            "author_name": "Ramakrishnan and Gherke",
+            "price": "19",
+            "desc": "Relational model terminology domains, Attributes, Tuples, Relations, characteristics of relations, relational constraints domain constraints, key constraints and constraints on null, relational DB schema.Codd’s Rules",
+            "category": "Programming"
+        },
+        {
+            "id": "23",
+            "book_name": "Java Programming",
+            "author_name": "Rahul",
+            "price": "66",
+            "desc": "Introduction, Data types, acces specifiers, operators, control statements, arrays.",
+            "category": "Programming"
+        },
+        {
+            "id": "24",
+            "book_name": "Computer Architecture",
+            "author_name": "Subrata Ghosal",
+            "price": "40",
+            "desc": "Register Transfer Language, Register Transfer, Bus and Memory Transfers, Arithmetic Micro-operations, Logic Micro-operations, Shift Microoperations, Arithmetic logic shift unit",
+            "category": "Programming"
+        },
+        {
+            "id": "25",
+            "book_name": "GUI Programming",
+            "author_name": " Michael Halvorson",
+            "price": "55",
+            "desc": "Introduction to Window Applications, Using Form – Common Controls, Properties, Methods and Events. Interacting with controls - Textbox, Label, Button, Listbox, Combobox, Checkbox, Picture Box, Radio Button, Panel, scroll bar, Timer, ListView, TreeView, toolbar, Status Bar. Dialog Controls, Creating and Using MDI applications, Toolbar, Status Bar, Creating custom controls, Creating Menus",
+            "category": "Programming"
+        }
     ]
 }
+
