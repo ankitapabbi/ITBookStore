@@ -22,7 +22,9 @@ class WishListViewController: UIViewController ,UITableViewDelegate,UITableViewD
         
         // Do any additional setup after loading the view.
     }
-  
+    override func viewWillAppear(_ animated: Bool) {
+        self.tblWishList.reloadData()
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         print(WishList.clicked_book.wish_array.count)
