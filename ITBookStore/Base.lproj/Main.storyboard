@@ -33,7 +33,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9yi-wy-bRe" kind="show" identifier="" id="rnC-XV-UMD"/>
+                                    <segue destination="9yi-wy-bRe" kind="show" id="QGz-6x-cSh"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jSO-jj-vDz">
@@ -629,7 +629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I3N-dy-5CM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3457.971014492754" y="-640.17857142857144"/>
+            <point key="canvasLocation" x="5278.2608695652179" y="-640.17857142857144"/>
         </scene>
         <!--Sub Category View Controller-->
         <scene sceneID="rIP-Al-aVb">
@@ -707,7 +707,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFQ-cz-13P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4398.5507246376819" y="-640.17857142857144"/>
+            <point key="canvasLocation" x="6217.3913043478269" y="-640.17857142857144"/>
         </scene>
         <!--Book Detail-->
         <scene sceneID="Czg-B7-gk7">
@@ -842,7 +842,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jno-I0-Y9p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5211.594202898551" y="-593.30357142857144"/>
+            <point key="canvasLocation" x="7031.884057971015" y="-593.30357142857144"/>
         </scene>
         <!--Menu-->
         <scene sceneID="OPo-xi-uZu">
@@ -864,7 +864,7 @@
             </objects>
             <point key="canvasLocation" x="1826" y="110"/>
         </scene>
-        <!--Sign Up View Controller-->
+        <!--Sign Up-->
         <scene sceneID="ckh-0E-aiz">
             <objects>
                 <viewController id="9yi-wy-bRe" customClass="SignUpViewController" customModule="ITBookStore" customModuleProvider="target" sceneMemberID="viewController">
@@ -872,13 +872,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sign Up " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxY-2y-YR6">
-                                <rect key="frame" x="0.0" y="69" width="414" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tQY-vR-4Hy">
                                 <rect key="frame" x="20" y="250" width="360" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -924,10 +917,26 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kuK-7T-UTC">
+                                <rect key="frame" x="2" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Sign Up" id="vWT-UW-B8Q">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="B1i-ty-APR">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="Xof-xV-vXo"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="88d-fx-Lkr"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Sign Up" id="lX0-Mj-LPG">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="FsW-pl-po2"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="txtConfirmPassword" destination="srA-aw-0VA" id="xh2-E8-S25"/>
                         <outlet property="txtEmail" destination="tQY-vR-4Hy" id="koE-Wv-NKB"/>
@@ -938,7 +947,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fcW-1d-x7R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="908.69565217391312" y="-640.17857142857144"/>
+            <point key="canvasLocation" x="813" y="-593"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hYR-bQ-Ic7">
@@ -957,7 +966,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJs-Vx-IXQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2604" y="-640"/>
+            <point key="canvasLocation" x="4423.188405797102" y="-640.17857142857144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W4L-Fw-WHx">
@@ -993,4 +1002,7 @@
         <image name="proicon" width="64" height="64"/>
         <image name="wishlish" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Swa-ig-Ih8"/>
+    </inferredMetricsTieBreakers>
 </document>
