@@ -12,6 +12,7 @@ class WishListViewController: UIViewController ,UITableViewDelegate,UITableViewD
    
     
 
+    @IBOutlet weak var lblWishCount: UILabel!
     @IBOutlet weak var tblWishList: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,13 +20,15 @@ class WishListViewController: UIViewController ,UITableViewDelegate,UITableViewD
         self.tblWishList.delegate = self
         self.tblWishList.dataSource = self
         self.tblWishList.reloadData()
-        
+       
         
         
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
         self.tblWishList.reloadData()
+        self.lblWishCount.text = String(WishList.clicked_book.wish_array.count)
+        
         
     }
     
@@ -62,6 +65,7 @@ class WishListViewController: UIViewController ,UITableViewDelegate,UITableViewD
                 WishList.clicked_book.deleteBook(index: indexPath.row)
                 //self.tblWishList.reloadData()
                 self.tblWishList.deleteRows(at: [indexPath], with: .automatic)
+                self.lblWishCount.text = String(WishList.clicked_book.wish_array.count)
                 actionPerformed(true)
             }))
             self.present(alert,animated: true)
