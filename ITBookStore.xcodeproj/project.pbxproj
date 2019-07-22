@@ -24,6 +24,7 @@
 		7E01CB3022E61900005E23B1 /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01CB2F22E61900005E23B1 /* AboutUsViewController.swift */; };
 		7E01CB3222E61919005E23B1 /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01CB3122E61919005E23B1 /* HelpViewController.swift */; };
 		7E01CB3522E61A3B005E23B1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E01CB3422E61A3B005E23B1 /* WebKit.framework */; };
+		7E01CB3922E61AFD005E23B1 /* Help.html in Resources */ = {isa = PBXBuildFile; fileRef = 7E01CB3822E61AFD005E23B1 /* Help.html */; };
 		7EB02BA422E05B6A001E8765 /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7EB02BA322E05B6A001E8765 /* UserInfo.plist */; };
 		7EB02BA622E060C1001E8765 /* MenuTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02BA522E060C1001E8765 /* MenuTabBarController.swift */; };
 		7EB02BAA22E12920001E8765 /* FeaturedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB02BA922E12920001E8765 /* FeaturedViewController.swift */; };
@@ -55,6 +56,7 @@
 		7E01CB2F22E61900005E23B1 /* AboutUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		7E01CB3122E61919005E23B1 /* HelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		7E01CB3422E61A3B005E23B1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		7E01CB3822E61AFD005E23B1 /* Help.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Help.html; sourceTree = "<group>"; };
 		7EB02BA322E05B6A001E8765 /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 		7EB02BA522E060C1001E8765 /* MenuTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTabBarController.swift; sourceTree = "<group>"; };
 		7EB02BA922E12920001E8765 /* FeaturedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			children = (
 				016C68C122E203FD000BFFFC /* Books.json */,
 				01F9509522E5962200B02940 /* AboutUs.html */,
+				7E01CB3822E61AFD005E23B1 /* Help.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				7EDDCB4A22D5BA7E00790F1B /* Main.storyboard in Resources */,
 				016C68C222E203FD000BFFFC /* Books.json in Resources */,
 				7EB02BA422E05B6A001E8765 /* UserInfo.plist in Resources */,
+				7E01CB3922E61AFD005E23B1 /* Help.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

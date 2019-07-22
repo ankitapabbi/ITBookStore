@@ -7,15 +7,20 @@
 //
 
 import UIKit
-
+import WebKit
 class HelpViewController: UIViewController {
 
+    @IBOutlet weak var helpWebKit: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loadFromFile()
         // Do any additional setup after loading the view.
     }
-    
+    func loadFromFile(){
+        let localfilePath = Bundle.main.url(forResource: "Help", withExtension: "html")
+        let myRequest = URLRequest(url: localfilePath!)
+        helpWebKit.load(myRequest)
+    }
 
     /*
     // MARK: - Navigation
