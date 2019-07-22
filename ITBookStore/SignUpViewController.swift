@@ -36,26 +36,27 @@ class SignUpViewController: UIViewController {
                     {
                         for user in users {
                         
-                        if pNumber.isValidMobile(){
+                        if email.validateEmail(){
                             
-                            if email.validateEmail(){
+                          if pNumber.validatePNumber(value: pNumber){
                             
-                            if ((fname == (user["userName"] as! String)) &&  (email == (user["userEmail"] as! String)) && (pswd == (user["password"] as! String)) && (confirmpswd == (user["password"] as! String))){
+                            if ((fname == (user["userName"] as! String)) && (pNumber == (user["userPhoneNumber"] as! String)) &&  (email == (user["userEmail"] as! String)) && (pswd == (user["password"] as! String)) && (confirmpswd == (user["password"] as! String))){
                                
                                 self.performSegue(withIdentifier: "toLogin", sender: nil)
                             }
                             }else {
-                                let alert = UIAlertController(title: "Error", message: "Invalid Email", preferredStyle: UIAlertController.Style.alert)
-                                
-                                                        let actionOk = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
-                                                        let actionCanel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
-                                                        alert.addAction(actionOk)
-                                                        alert.addAction(actionCanel)
-                                                        self .present(alert, animated: true ,completion: nil)
-                                
+                                let alert = UIAlertController(title: "Error", message: "Invalid Phone Number", preferredStyle: UIAlertController.Style.alert)
+
+                                let actionOk = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
+                                let actionCanel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)
+                                alert.addAction(actionOk)
+                                alert.addAction(actionCanel)
+                                self .present(alert, animated: true ,completion: nil)
+
                             }
-                        }else{
-                            let alert = UIAlertController(title: "Error", message: "Invalid Phone Number", preferredStyle: UIAlertController.Style.alert)
+                        }
+                        else {
+                            let alert = UIAlertController(title: "Error", message: "Invalid Email", preferredStyle: UIAlertController.Style.alert)
                             
                             let actionOk = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil)
                             let actionCanel = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler: nil)

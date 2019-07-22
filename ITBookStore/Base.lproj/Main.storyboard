@@ -33,7 +33,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="9yi-wy-bRe" kind="show" identifier="toLogin" id="rnC-XV-UMD"/>
+                                    <segue destination="9yi-wy-bRe" kind="show" identifier="" id="rnC-XV-UMD"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="jSO-jj-vDz">
@@ -669,12 +669,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6s-Nc-F47">
-                                <rect key="frame" x="5" y="481" width="404" height="37"/>
+                                <rect key="frame" x="5" y="437" width="404" height="92"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <state key="normal" title="Register"/>
                                 <connections>
                                     <action selector="btnRegister:" destination="9yi-wy-bRe" eventType="touchUpInside" id="f3S-RS-Xu1"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="toLogin" id="Swa-ig-Ih8"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EgQ-VP-drL">
