@@ -13,6 +13,7 @@ class CartViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
 
     @IBOutlet weak var tblCart: UITableView!
+    @IBOutlet weak var lblCartCount: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Cart"
@@ -24,6 +25,7 @@ class CartViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     }
     override func viewWillAppear(_ animated: Bool) {
         self.tblCart.reloadData()
+        self.lblCartCount.text = String(Cart.clicked_book.cart_array.count)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,6 +57,7 @@ class CartViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
                 Cart.clicked_book.deleteBook(index: indexPath.row)
                 //self.tblCart.reloadData()
                 self.tblCart.deleteRows(at: [indexPath], with: .automatic)
+                self.lblCartCount.text = String(Cart.clicked_book.cart_array.count)
                 actionPerformed(true)
             }))
             self.present(alert,animated: true)
