@@ -66,12 +66,19 @@ class LoginViewController: UIViewController {
                         
                         
                             if ( (email == (user["userEmail"] as! String)) && (password == (user["password"] as! String)) ){
-                                
+                               
                                 
                                 if self.switchRememberMe.isOn
                                 {
+                                    let userName = user["userName"] as! String
+                                    let userPhoneNumber = user["userPhoneNumber"] as! String
+                                    let userId = user["userId"] as! Int
                                     userDefault.setValue(self.txtEmail.text, forKey: "userEmail")
                                     userDefault.set(self.txtPassword.text, forKey: "userPassword")
+                                    
+                                    userDefault.set( userName,forKey: "userName")
+                                    userDefault.set( userPhoneNumber,forKey: "userPhoneNumber")
+                                    userDefault.set( userId,forKey: "userId")
                                     
                                     
                                     
