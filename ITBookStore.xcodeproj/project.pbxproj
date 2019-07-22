@@ -16,6 +16,7 @@
 		01F3138922E2E63000C7966F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3138822E2E63000C7966F /* ProfileViewController.swift */; };
 		01F3138D22E2E9AE00C7966F /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3138C22E2E9AE00C7966F /* MoreViewController.swift */; };
 		01F3139122E2EC2100C7966F /* ContactUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3139022E2EC2100C7966F /* ContactUsViewController.swift */; };
+		01F9509622E5962200B02940 /* AboutUs.html in Resources */ = {isa = PBXBuildFile; fileRef = 01F9509522E5962200B02940 /* AboutUs.html */; };
 		7E01CB2822E3CAC8005E23B1 /* DescViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01CB2722E3CAC8005E23B1 /* DescViewController.swift */; };
 		7E01CB2A22E40A91005E23B1 /* WishList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01CB2922E40A91005E23B1 /* WishList.swift */; };
 		7E01CB2C22E40A9B005E23B1 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E01CB2B22E40A9B005E23B1 /* Cart.swift */; };
@@ -43,6 +44,7 @@
 		01F3138822E2E63000C7966F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		01F3138C22E2E9AE00C7966F /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		01F3139022E2EC2100C7966F /* ContactUsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsViewController.swift; sourceTree = "<group>"; };
+		01F9509522E5962200B02940 /* AboutUs.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = AboutUs.html; sourceTree = "<group>"; };
 		7E01CB2722E3CAC8005E23B1 /* DescViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescViewController.swift; sourceTree = "<group>"; };
 		7E01CB2922E40A91005E23B1 /* WishList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishList.swift; sourceTree = "<group>"; };
 		7E01CB2B22E40A9B005E23B1 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				016C68C122E203FD000BFFFC /* Books.json */,
+				01F9509522E5962200B02940 /* AboutUs.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F9509622E5962200B02940 /* AboutUs.html in Resources */,
 				7EDDCB4F22D5BA8100790F1B /* LaunchScreen.storyboard in Resources */,
 				7EDDCB4C22D5BA8100790F1B /* Assets.xcassets in Resources */,
 				7EDDCB4A22D5BA7E00790F1B /* Main.storyboard in Resources */,

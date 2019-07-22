@@ -16,7 +16,21 @@ class MoreViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+//    @IBAction func moreBtns(_ sender: UIButton) {
+//        if sender.tag == 0 {
+//            //self.performSegue(withIdentifier: "goToProfile", sender: nil)
+//        }
+//        if sender.tag == 1 {
+//
+//        }
+//        if sender.tag == 2 {
+//
+//        }
+//        if sender.tag == 3 {
+//
+//        }
+//    }
+    
     /*
     // MARK: - Navigation
 
