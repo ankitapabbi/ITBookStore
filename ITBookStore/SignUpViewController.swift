@@ -40,7 +40,7 @@ class SignUpViewController: UIViewController {
                             
                           if pNumber.validatePNumber(value: pNumber){
                             
-                            if ((fname == (user["userName"] as! String)) && (pNumber == (user["userPhoneNumber"] as! String)) &&  (email == (user["userEmail"] as! String)) && (pswd == (user["password"] as! String)) && (confirmpswd == (user["password"] as! String))){
+                            if ((fname == (user["userName"] as! String)) &&  (email == (user["userEmail"] as! String)) && (pswd == (user["password"] as! String)) && (confirmpswd == (user["password"] as! String))){
                                
                                 self.performSegue(withIdentifier: "toLogin", sender: nil)
                             }

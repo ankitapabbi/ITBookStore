@@ -15,7 +15,7 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
     
     
     @IBOutlet weak var tblSubCategory: UITableView!
-    var array=Array<Book>()
+    var arrayOfBooks=Array<Book>()
     var selectedCategory : Int?
     var f = FeaturedViewController()
     
@@ -72,15 +72,15 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //print(Book.clicked_book.book_Dictionary.count)
-        return self.array.count
+        return self.arrayOfBooks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let  cell = tableView.dequeueReusableCell(withIdentifier: "subCatCell") as! UITableViewCell
        // let b = f.book_array[indexPath.row]
         print(indexPath.row)
-        cell.textLabel?.text = array[indexPath.row].bookName
-        cell.detailTextLabel?.text = String(Float(array[indexPath.row].price)!.currency())
+        cell.textLabel?.text = arrayOfBooks[indexPath.row].bookName
+        cell.detailTextLabel?.text = String(Float(arrayOfBooks[indexPath.row].price)!.currency())
         // click action on perticular customer name using tap gesture
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapToGoOnDesc(_:)))
         cell.tag = indexPath.row
@@ -116,7 +116,7 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
 
     func readJsonFileArray(jsonFileName: String, category:String) -> [Book]
     {
-        var arrayOfBooks=Array<Book>()
+        var array_Of_Books=Array<Book>()
         
         let url = Bundle.main.url(forResource: jsonFileName, withExtension: "json")
         
@@ -190,7 +190,7 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
                             
                             if book.category == category
                             {
-                                array.append(book)
+                                arrayOfBooks.append(book)
                               
                             }
                             
@@ -199,7 +199,7 @@ class SubCategoryViewController: UIViewController,UITableViewDelegate,UITableVie
             }
         }
      
-        return arrayOfBooks
+        return array_Of_Books
     }
     
     

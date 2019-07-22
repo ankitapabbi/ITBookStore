@@ -186,53 +186,95 @@
                                 </items>
                             </navigationBar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKn-M5-bWR">
-                                <rect key="frame" x="10" y="120" width="404" height="39"/>
+                                <rect key="frame" x="60" y="119" width="139" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Profile"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Profile">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
-                                    <action selector="moreBtns:" destination="OuP-Tx-WL6" eventType="touchUpInside" id="fia-Af-l8w"/>
                                     <segue destination="5Ho-yA-mOy" kind="show" identifier="goToProfile" id="f6r-s2-v3z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZH-3k-b8p">
-                                <rect key="frame" x="10" y="167" width="404" height="49"/>
+                                <rect key="frame" x="79" y="166" width="149" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Contact us"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Contact us">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
-                                    <action selector="moreBtns:" destination="OuP-Tx-WL6" eventType="touchUpInside" id="9qo-mA-BOH"/>
                                     <segue destination="0Iu-kk-pwl" kind="show" identifier="goToContactUs" id="eNZ-Ye-BxY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFA-WH-HYu">
-                                <rect key="frame" x="5" y="224" width="404" height="49"/>
+                                <rect key="frame" x="73" y="227" width="141" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <state key="normal" title="About us"/>
-                                <connections>
-                                    <action selector="moreBtns:" destination="OuP-Tx-WL6" eventType="touchUpInside" id="wXR-qi-tgv"/>
-                                </connections>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="22"/>
+                                <state key="normal" title="About us">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfO-x2-I9k">
-                                <rect key="frame" x="30" y="330" width="354" height="52"/>
+                                <rect key="frame" x="86" y="337" width="104" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Logout"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                                 <connections>
-                                    <action selector="moreBtns:" destination="OuP-Tx-WL6" eventType="touchUpInside" id="CWn-yM-bbF"/>
                                     <segue destination="BhK-qW-ulX" kind="unwind" unwindAction="unWindLogoutFromAnyScreenWithStoryboard:" id="Jkp-sY-jIh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ldq-zV-ilZ">
-                                <rect key="frame" x="188" y="283" width="46" height="38"/>
+                                <rect key="frame" x="73" y="291" width="99" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <state key="normal" title="Help"/>
-                                <connections>
-                                    <action selector="moreBtns:" destination="OuP-Tx-WL6" eventType="touchUpInside" id="d4W-zh-4MV"/>
-                                </connections>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="23"/>
+                                <state key="normal" title="Help">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="proicon" translatesAutoresizingMaskIntoConstraints="NO" id="SaH-C7-J5a">
+                                <rect key="frame" x="12" y="118" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.25220262999999998" green="0.44200205799999998" blue="0.71768152709999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abouticon" translatesAutoresizingMaskIntoConstraints="NO" id="HGO-gj-bt3">
+                                <rect key="frame" x="12" y="231" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="helpicon" translatesAutoresizingMaskIntoConstraints="NO" id="6lf-mY-IQV">
+                                <rect key="frame" x="12" y="290" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logouticon" translatesAutoresizingMaskIntoConstraints="NO" id="4vs-fU-mbd">
+                                <rect key="frame" x="12" y="349" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contacticon" translatesAutoresizingMaskIntoConstraints="NO" id="Fap-iy-fHC">
+                                <rect key="frame" x="12" y="175" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nexticon" translatesAutoresizingMaskIntoConstraints="NO" id="5mk-yM-SGN">
+                                <rect key="frame" x="369" y="180" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nexticon" translatesAutoresizingMaskIntoConstraints="NO" id="aeW-lI-vOD">
+                                <rect key="frame" x="369" y="236" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nexticon" translatesAutoresizingMaskIntoConstraints="NO" id="4o8-Xa-BO4">
+                                <rect key="frame" x="369" y="295" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nexticon" translatesAutoresizingMaskIntoConstraints="NO" id="akB-bf-xSf">
+                                <rect key="frame" x="369" y="348" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nexticon" translatesAutoresizingMaskIntoConstraints="NO" id="VIS-mw-hKm">
+                                <rect key="frame" x="369" y="124" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="prT-Y2-RN8"/>
@@ -364,6 +406,9 @@
                                 <state key="normal" title="SMS">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnSMS:" destination="0Iu-kk-pwl" eventType="touchUpInside" id="M9y-rY-PFg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="twm-bo-V11">
                                 <rect key="frame" x="232" y="276" width="100" height="36"/>
@@ -373,6 +418,9 @@
                                 <state key="normal" title="CALL">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnCall:" destination="0Iu-kk-pwl" eventType="touchUpInside" id="Le6-QF-Nj1"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Get In Touch With Us..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WZ1-Io-P9C">
                                 <rect key="frame" x="20" y="110" width="203" height="23"/>
@@ -417,6 +465,9 @@
                                 <state key="normal" title="Email">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnEmail:" destination="0Iu-kk-pwl" eventType="touchUpInside" id="niY-mt-ZQH"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="All Rights Are Reserved Since 2019." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqz-Jp-FHA">
                                 <rect key="frame" x="71" y="713" width="272" height="21"/>
@@ -429,6 +480,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ypu-6S-269"/>
                     </view>
+                    <connections>
+                        <outlet property="txtEmailAdd" destination="cjH-AQ-Frq" id="XhY-Pd-elF"/>
+                        <outlet property="txtEmailMsg" destination="hua-ua-wkV" id="tm5-hi-gyE"/>
+                        <outlet property="txtEmailSubject" destination="uNY-wX-jHv" id="NLW-KZ-z9F"/>
+                        <outlet property="txtMsg" destination="JN6-Nt-Q97" id="VK8-k9-5kF"/>
+                        <outlet property="txtPhone" destination="HeE-1Z-z8r" id="z7C-tk-h5V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NmH-q6-x2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -922,11 +980,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="abouticon" width="64" height="64"/>
         <image name="bookcat" width="128" height="128"/>
         <image name="cart" width="30" height="30"/>
+        <image name="contacticon" width="64" height="64"/>
         <image name="defaultBook" width="512" height="512"/>
+        <image name="helpicon" width="64" height="64"/>
+        <image name="logouticon" width="64" height="64"/>
         <image name="mylogo" width="512" height="512"/>
+        <image name="nexticon" width="64" height="64"/>
         <image name="profileicon" width="256" height="256"/>
+        <image name="proicon" width="64" height="64"/>
         <image name="wishlish" width="24" height="24"/>
     </resources>
 </document>
